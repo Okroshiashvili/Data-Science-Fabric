@@ -1,0 +1,15 @@
+.ipynb_checkpoints
+.pyc
+.spyderproject
+.spyproject
+*.py[cod]
+*$py.class
+__pycache__
+*~
+._*
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.py[cod]
+output
