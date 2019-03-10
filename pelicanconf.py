@@ -5,6 +5,9 @@ from __future__ import unicode_literals
 AUTHOR = 'Nodar Okroshiashvili'
 SITENAME = 'Data Science Fabric'
 SITEURL = ''
+SITESUBTITLE = u"Torture the data, and it will confess to anything. Ronald Coase"
+
+SITE_DESCRIPTION = u'My name is Nodar Okroshiashvili \u2015 a data scientist who gets things done. I am Okroshiashvili at Github and @N_Okroshiashvil at twitter. I Stopped Dreaming and Started Doing.'
 
 
 PATH = 'content'
@@ -125,3 +128,47 @@ COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part uncle
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+
+
+
+
+
+LANDING_PAGE_ABOUT = {'title': 'Stop Dreaming - Start Doing',
+        'details': """<div itemscope itemtype="http://schema.org/Person"><p>My name
+        is <span itemprop="name">Nodar Okroshiashvili</span>.
+       I am <a href="https://github.com/Okroshiashvili/" title="My Github
+       profile" itemprop="url"><span itemprop="nickname">Okroshiashvili</span></a> at Github and <a
+       href="https://twitter.com/N_Okroshiashvil/" title="My Twitter
+       profile" itemprop="url">@N_Okroshiashvil</a> at twitter. You can also reach me via <a
+       href="mailto:n.okroshiashvili@gmail.com" title="My email
+       address" itemprop="email">email</a>.</p><p>I work for <a href="https://credo.ge/"
+       title="Credo Bank" itemprop="affiliation">Credo Bank</a> which is a local commercial bank.
+       I am a data scientist at Research and Development unit, which is under Marketing Department.
+       Long story short, I model consumer behaviour, using various ML  techniques and based on 
+       analysis create products and offer those products to consumer.</p><p> I hold BS in
+       Business Administration, MA in Economics and last year started my PhD, again in Economics.
+       </p><p>I try to help aspiring data scientist, not to make the same mistakes I did, 
+       when starting transition from Economics to Data Science.</p><p>Besides programming, I do  
+       programming, and besides all that I love fishing. My motto is: Do it, and do it right now.
+       </p></div>"""}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
