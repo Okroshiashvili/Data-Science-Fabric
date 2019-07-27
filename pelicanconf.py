@@ -134,21 +134,23 @@ COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part uncle
 
 
 
-LANDING_PAGE_ABOUT = {'title': 'Stop Dreaming - Start Doing',
+LANDING_PAGE_ABOUT = {'title': 'Unstructured Thoughts',
         'details': """<div itemscope itemtype="http://schema.org/Person"><p>My name
         is <span itemprop="name">Nodar Okroshiashvili</span>.
        I am <a href="https://github.com/Okroshiashvili/" title="My Github
-       profile" itemprop="url"><span itemprop="nickname">Okroshiashvili</span></a> at Github and <a
+       profile" itemprop="url"><span itemprop="nickname">Okroshiashvili</span></a> at Github, <a
        href="https://twitter.com/N_Okroshiashvil/" title="My Twitter
-       profile" itemprop="url">@N_Okroshiashvil</a> at twitter. You can also reach me via <a
+       profile" itemprop="url">@N_Okroshiashvil</a> at twitter and <a
+       href="https://www.linkedin.com/in/nodar-okroshiashvili/" title="My LinkedIn
+       profile" itemprop="url"><span itemprop="nickname">nodar-okroshiashvili</span></a>.You can also reach me via <a
        href="mailto:n.okroshiashvili@gmail.com" title="My email
        address" itemprop="email">email</a>.</p><p>I work for <a href="https://credo.ge/"
        title="Credo Bank" itemprop="affiliation">Credo Bank</a> which is a local commercial bank.
        I am a data scientist at Research and Development unit, which is under Marketing Department.
        Long story short, I model consumer behaviour, using various ML  techniques and based on 
        analysis create products and offer those products to consumer.</p><p> I hold BS in
-       Business Administration, MA in Economics and last year started my PhD, again in Economics.
-       </p><p>I try to help aspiring data scientist, not to make the same mistakes I did, 
+       Business Administration, MA in Economics and currently attending my PhD, again in Economics.
+       </p><p>I try to help aspiring data scientist, not to make the same mistakes as I did, 
        when starting transition from Economics to Data Science.</p><p>Besides programming, I do  
        programming, and besides all that I love fishing. My motto is: Do it, and do it right now.
        </p></div>"""}
