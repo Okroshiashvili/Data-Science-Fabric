@@ -7,10 +7,13 @@ SITENAME = 'Data Science Fabric'
 SITEURL = '/'
 SITESUBTITLE = u"Torture the data, and it will confess to anything. Ronald Coase"
 
-SITE_DESCRIPTION = u'My name is Nodar Okroshiashvili \u2015 a data scientist who gets things done. I am Okroshiashvili at Github and @N_Okroshiashvil at twitter. I Stopped Dreaming and Started Doing.'
+SITE_DESCRIPTION = u'My name is Nodar Okroshiashvili \u2015 a data scientist who gets things done. I am Okroshiashvili at Github and @N_Okroshiashvil at twitter.'
 
 
 PATH = 'content'
+
+
+# Regional settings
 TIMEZONE = 'Asia/Tbilisi'
 DEFAULT_LANG = 'en'
 DEFAULT_PAGINATION = 10
@@ -24,29 +27,10 @@ AUTHOR_FEED_RSS = None
 
 
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-
-
-# Social widget
-SOCIAL_PROFILE_LABEL = 'Stay in Touch'
-
-SOCIAL = (('linkedin-square', 'https://www.linkedin.com/in/nodar-okroshiashvili/'),
-          ('Github', 'https://github.com/Okroshiashvili'),
-		  ('Twitter', 'https://twitter.com/N_Okroshiashvil'))
-
-TWITTER_USERNAME = 'N_Okroshiashvil'
-
-###       Custom Settings    ###
-
-
-THEME = 'pelican-themes/elegant'
+# Plugins and extensions
 
 PLUGIN_PATHS = ['pelican-plugins']
+
 PLUGINS = ["tipue_search",
             "render_math",
             'pelican-ipynb.markup',
@@ -54,9 +38,6 @@ PLUGINS = ["tipue_search",
             'neighbors',
             'share_post',
             'related_posts']
-
-
-IGNORE_FILES = [".ipynb_checkpoints"]
 
 
 SITEMAP = {
@@ -74,10 +55,60 @@ SITEMAP = {
 }
 
 
-STATIC_PATHS = ['theme/images', 'images']
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.toc' :{'permalink' : 'true'},
+
+    },
+    'output_format': 'html5',
+}
+
+IPYNB_IGNORE_CSS = True
+
+OUTPUT_RETENTION = [".hg", ".git", "CNAME"]
+
+IGNORE_FILES = [".ipynb_checkpoints"]
+
 USE_SHORTCUT_ICONS=True
 
 
+
+
+
+
+
+
+
+
+# Blogroll
+LINKS = (('Pelican', 'http://getpelican.com/'),
+         ('Python.org', 'http://python.org/'),
+         ('Jinja2', 'http://jinja.pocoo.org/'),
+         ('You can modify those links in your config file', '#'),)
+
+
+
+# Social
+SOCIAL_PROFILE_LABEL = 'Stay in Touch'
+
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/nodar-okroshiashvili/'),
+          ('Github', 'https://github.com/Okroshiashvili'),
+		  ('Twitter', 'https://twitter.com/N_Okroshiashvil'))
+
+TWITTER_USERNAME = 'N_Okroshiashvil'
+
+
+
+
+
+
+# Appearance
+THEME = 'pelican-themes/elegant'
+
+STATIC_PATHS = ['theme/images', 'images']
 
 DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "404"]
 
@@ -86,8 +117,6 @@ TIPUE_SEARCH = True
 TEMPLATE_PAGES = {
         'search.html': 'search.html',
         }
-
-
 
 ARTICLE_PATHS = ['articles',]
 ARTICLE_URL = '{slug}'
@@ -102,37 +131,13 @@ PAGE_SAVE_AS = "{slug}.html"
 
 SEARCH_URL = "search"
 
+RELATED_POSTS_LABEL = 'Keep Reading'
+SHARE_POST_INTRO = 'Like this post? Share on:'
+COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part unclear? Leave your comments below.'
 
 
 # If True, load unmodified content from cache
 LOAD_CONTENT_CACHE = False
-
-
-IPYNB_IGNORE_CSS = True
-
-
-
-MARKDOWN = {
-    'extension_configs': {
-        'markdown.extensions.codehilite': {'css_class': 'highlight'},
-        'markdown.extensions.extra': {},
-        'markdown.extensions.meta': {},
-        'markdown.extensions.toc' :{'permalink' : 'true'},
-
-    },
-    'output_format': 'html5',
-}
-
-
-
-
-OUTPUT_RETENTION = [".hg", ".git", "CNAME"]
-
-
-
-RELATED_POSTS_LABEL = 'Keep Reading'
-SHARE_POST_INTRO = 'Like this post? Share on:'
-COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part unclear? Leave your comments below.'
 
 
 
@@ -144,49 +149,10 @@ COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part uncle
 
 # SEO
 SITE_DESCRIPTION = (
-    "Documentation of Elegant, a theme for Pelican, originally created by Talha Mansoor"
+    "Blog about data science, mathematics and Python"
 )
 
 
 ANDING_PAGE_TITLE = "Unstructured Thoughts"
-
-LANDING_PAGE_ABOUT = {'title': 'About Me',
-        'details': """<div itemscope itemtype="http://schema.org/Person"><p>My name
-        is <span itemprop="name">Nodar Okroshiashvili</span>.
-       I am <a href="https://github.com/Okroshiashvili/" title="My Github
-       profile" itemprop="url"><span itemprop="nickname">Okroshiashvili</span></a> at Github, <a
-       href="https://twitter.com/N_Okroshiashvil/" title="My Twitter
-       profile" itemprop="url">@N_Okroshiashvil</a> at twitter and <a
-       href="https://www.linkedin.com/in/nodar-okroshiashvili/" title="My LinkedIn
-       profile" itemprop="url"><span itemprop="nickname">nodar-okroshiashvili</span></a> at LinkedIn. You can also reach me via <a
-       href="mailto:n.okroshiashvili@gmail.com" title="My email
-       address" itemprop="email">email</a>.</p><p>I work for <a href="https://credo.ge/"
-       title="Credo Bank" itemprop="affiliation">Credo Bank</a> which is a local commercial bank.
-       I am a data scientist at Research and Development unit, which is under Marketing Department.
-       Long story short, I model consumer behaviour, using various ML  techniques and based on 
-       analysis create products and offer those products to consumer.</p><p> I hold BS in
-       Business Administration, MA in Economics and currently attending my PhD, again in Economics.
-       </p><p>I try to help aspiring data scientist, not to make the same mistakes as I did, 
-       when starting transition from Economics to Data Science.</p><p>Besides programming, I do  
-       programming, and besides all that I love fishing. My motto is: Do it, and do it right now.
-       </p></div>"""}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
