@@ -1,10 +1,8 @@
 ---
-author: Nodar Okroshiashvili
-title: About Me
-layout: page
 date: 2019-09-04
-status: hidden
 slug: landing-page-about-hidden
+status: hidden
+title: About Me
 ---
 
 My name is Nodar Okroshiashvili. I am [Okroshiashvili](https://github.com/Okroshiashvili/) on Github, [@N_Okroshiashvil](https://twitter.com/N_Okroshiashvil/) on Twitter, and [nodar-okroshiashvili](https://www.linkedin.com/in/nodar-okroshiashvili/) on LinkedIn. You can also reach me via [email](mailto:n.okroshiashvili@gmail.com).

@@ -57,6 +57,7 @@ SITEMAP = {
 
 MARKDOWN = {
     'extension_configs': {
+        'markdown.extensions.admonition': {},
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
@@ -108,6 +109,8 @@ TWITTER_USERNAME = 'N_Okroshiashvil'
 # Appearance
 THEME = 'pelican-themes/elegant'
 
+TYPOGRIFY = True
+
 STATIC_PATHS = ['theme/images', 'images']
 
 DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "404"]
@@ -128,6 +131,10 @@ ARCHIVES_URL = "archives"
 
 PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"
+
+TAG_SAVE_AS = ""
+AUTHOR_SAVE_AS = ""
+CATEGORY_SAVE_AS = ""
 
 SEARCH_URL = "search"
 
@@ -153,6 +160,6 @@ SITE_DESCRIPTION = (
 )
 
 
-ANDING_PAGE_TITLE = "Unstructured Thoughts"
+LANDING_PAGE_TITLE = "Unstructured Thoughts"
 
 
