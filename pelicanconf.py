@@ -35,7 +35,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 # Social widget
 SOCIAL_PROFILE_LABEL = 'Stay in Touch'
 
-SOCIAL = (('linkedin-square', 'https://www.linkedin.com/in/nodar-okroshiashvili-a86571131/'),
+SOCIAL = (('linkedin-square', 'https://www.linkedin.com/in/nodar-okroshiashvili/'),
           ('Github', 'https://github.com/Okroshiashvili'),
 		  ('Twitter', 'https://twitter.com/N_Okroshiashvil'))
 
@@ -79,7 +79,7 @@ USE_SHORTCUT_ICONS=True
 
 
 
-DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
+DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "404"]
 
 TIPUE_SEARCH = True
 
@@ -90,8 +90,18 @@ TEMPLATE_PAGES = {
 
 
 ARTICLE_PATHS = ['articles',]
-ARTICLE_URL = 'articles/{category}/{slug}.html'
-ARTICLE_SAVE_AS = 'articles/{category}/{slug}.html'
+ARTICLE_URL = '{slug}'
+ARTICLE_SAVE_AS = '{slug}.html'
+
+TAGS_URL = "tags"
+CATEGORIES_URL = "categories"
+ARCHIVES_URL = "archives"
+
+PAGE_URL = "{slug}"
+PAGE_SAVE_AS = "{slug}.html"
+
+SEARCH_URL = "search"
+
 
 
 # If True, load unmodified content from cache
@@ -132,9 +142,15 @@ COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part uncle
 
 
 
+# SEO
+SITE_DESCRIPTION = (
+    "Documentation of Elegant, a theme for Pelican, originally created by Talha Mansoor"
+)
 
 
-LANDING_PAGE_ABOUT = {'title': 'Unstructured Thoughts',
+ANDING_PAGE_TITLE = "Unstructured Thoughts"
+
+LANDING_PAGE_ABOUT = {'title': 'About Me',
         'details': """<div itemscope itemtype="http://schema.org/Person"><p>My name
         is <span itemprop="name">Nodar Okroshiashvili</span>.
        I am <a href="https://github.com/Okroshiashvili/" title="My Github
