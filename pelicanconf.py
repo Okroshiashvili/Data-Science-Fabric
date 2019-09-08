@@ -37,7 +37,9 @@ PLUGINS = ["tipue_search",
             'sitemap',
             'neighbors',
             'share_post',
-            'related_posts']
+            'related_posts',
+            'latex',
+            'pelican_render_math']
 
 
 SITEMAP = {
