@@ -4,11 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Nodar Okroshiashvili'
 SITENAME = 'Data Science Fabric'
-SITEURL = '/'
+SITEURL = ""
 SITESUBTITLE = u"Torture the data, and it will confess to anything. Ronald Coase"
-
-SITE_DESCRIPTION = u'My name is Nodar Okroshiashvili \u2015 a data scientist who gets things done. I am Okroshiashvili at Github and @N_Okroshiashvil at twitter.'
-
 
 PATH = 'content'
 
@@ -105,15 +102,16 @@ TWITTER_USERNAME = 'N_Okroshiashvil'
 
 
 
-
-
-
 # Appearance
 THEME = 'pelican-themes/elegant'
 
 TYPOGRIFY = True
 
-STATIC_PATHS = ['theme/images', 'images']
+STATIC_PATHS = ['theme/images', 'images', 'extra']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'}}
+
+
 
 DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "404"]
 
