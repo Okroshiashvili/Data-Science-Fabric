@@ -26,6 +26,9 @@ AUTHOR_FEED_RSS = None
 
 # Plugins and extensions
 
+
+#MARKUP = ('md', 'ipynb')
+
 PLUGIN_PATHS = ['pelican-plugins']
 
 PLUGINS = ["tipue_search",
