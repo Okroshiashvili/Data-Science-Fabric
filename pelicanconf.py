@@ -77,11 +77,6 @@ USE_SHORTCUT_ICONS=True
 
 
 
-
-
-
-
-
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
@@ -106,7 +101,8 @@ THEME = 'pelican-themes/elegant'
 
 TYPOGRIFY = True
 
-STATIC_PATHS = ['theme/images', 'images', 'extra']
+STATIC_PATHS = ['theme/images', 'images', 'extra', 'extra/robots.txt']
+
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'}}
 
