@@ -102,7 +102,7 @@ TWITTER_USERNAME = 'N_Okroshiashvil'
 # Appearance
 THEME = 'pelican-themes/elegant'
 
-TYPOGRIFY = True
+
 
 STATIC_PATHS = ['theme/images', 'images', 'extra', 'extra/robots.txt']
 
