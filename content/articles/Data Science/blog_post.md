@@ -20,15 +20,38 @@ Author: Nodar Okroshiashvili
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-x = np.linspace(0, 2*np.pi)
-plt.plot(x, np.sin(x))
-
-def sqaure(x):
-    return x ** 2
-
-square(5)
 ```
 
 
 
+
+```python
+x = np.linspace(0, 2*np.pi)
+plt.plot(x, np.sin(x))
+```
+
+```
+[<matplotlib.lines.Line2D at 0x7f032d0992e8>]
+```
+
+![picture](content/article/images/blog_post_figure2_1.png)\
+
+
+
+
+```python
+def sqaure(x):
+    return x ** 2
+
+sqaure(5)
+```
+
+```
+25
+```
+
+
+
+
+pweave -f markdown blog_post.pmd
 
