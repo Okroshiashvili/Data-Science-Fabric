@@ -34,8 +34,7 @@ plt.plot(x, np.sin(x))
 [<matplotlib.lines.Line2D at 0x7f032d0992e8>]
 ```
 
-![picture](article/images/blog_post_figure2_1.png)\
-
+![picture]({static}../../images/blog_post_figure2_1.png)
 
 
 
