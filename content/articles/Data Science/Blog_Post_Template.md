@@ -1,5 +1,5 @@
-Title: Second Test Post
-Date: 2018-08-30 02:14
+Title: Test post II
+Date: 2018-08-29 02:14
 Category: Data Science
 Tags: Data Science, Linear Algebra, Python
 Author: Nodar Okroshiashvili
@@ -18,10 +18,10 @@ plt.plot(x, np.sin(x))
 ```
 
 ```
-[<matplotlib.lines.Line2D at 0x7fbf618d1c50>]
+[<matplotlib.lines.Line2D at 0x7fcabd56b5c0>]
 ```
 
-![](figures/Blog_Post_Template_figure1_1.png)\
+![picture]({static}../../images/Blog_Post_Template_figure1_1.png)
 
 
 
@@ -44,12 +44,10 @@ sqaure(5)
 
 
 $$
-\begin{align*}\mathbb F(x) \approx
+\mathbb F(x) \approx
 \mathbb F(a) + \mathbb F^{'}(a)\cdot(x - a) + \frac{1}{2!}\cdot\mathbb F^{''}(a)\cdot(x - a)^{2} + 
 \frac{1}{3!}\cdot\mathbb F^{3}(a)\cdot(x - a)^{3} + \cdots + \frac{1}{n!}\cdot\mathbb F^{n}(a)\cdot(x - a)^{n}
-\end{align*}
 $$
-
 
 
 pweave -f markdown Blog_Post_Template.pmd
