@@ -64,6 +64,7 @@ Now, let do Taylor approximation for $sin(x)$ at $x = a$
 
 $$
 \mathbb F(x) =
+sin(x)
 $$
 
 $$
