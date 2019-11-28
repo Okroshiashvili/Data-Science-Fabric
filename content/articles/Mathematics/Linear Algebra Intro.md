@@ -95,6 +95,8 @@ Vector space is a set of objects (vectors) closed under finite vector addition a
 Linear transformation or linear map is a mapping between two vector spaces that preserves 
 the addition and scalar multiplication rule. More mathematically, a linear transformation between 
 two vector space $V$ and $W$ is a map $T : V~\rightarrow~W$ such that the following hold:
+
+
 * $T(v_1 + v_2) = T(v_1) + T(v_2)$  for any vectors $v_1$ and $v_2$ in $V$
 
 
