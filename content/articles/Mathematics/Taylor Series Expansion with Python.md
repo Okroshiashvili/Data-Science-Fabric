@@ -305,7 +305,7 @@ P_{n}(x) + R_{n}(x)
 $$
 
 You may wonder why you need Taylor expansion, but it's very important concept in mathematics 
-and one of [mathematical beauty](https://en.wikipedia.org/wiki/Mathematical_beauty),  
+and one of [mathematical beauty](https://en.wikipedia.org/wiki/Mathematical_beauty),
 [**Euler's Identity**](https://en.wikipedia.org/wiki/Euler%27s_identity) is derived from Taylor 
 series expansion of $cos(x)$, $sin(x)$, and $e(x)$. The derivation of Euler's Identity deserves separate post, 
 but if you want to see the derivation, you can take a look at [Khan Academy](https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-14/v/euler-s-formula-and-euler-s-identity). 
