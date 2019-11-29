@@ -9,6 +9,8 @@ Summary: This is introduction into the Linear Algebra Series
 
 These are the series of linear algebra mainly based on *Numpy* and *Scipy*. 
 The series will follow the sequence:
+
+
 1. **Introduction**
 2. Basics of linear algebra
 3. Intermediate linear algebra: Part I and Part II
