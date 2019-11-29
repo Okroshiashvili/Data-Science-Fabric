@@ -914,8 +914,7 @@ $$
 a_{11} &  \cdots & a_{1m} \\
 \vdots & \vdots  & \vdots \\
 a_{n1} &  \cdots & a_{nm} \\
-\end{bmatrix} =
-
+\end{bmatrix} = 
 \begin{bmatrix}
 \gamma a_{11} & \cdots & \gamma a_{1m} \\
 \vdots & \vdots & \vdots \\
@@ -939,8 +938,7 @@ a_{n1} & \cdots & a_{nk} \\
 b_{11} & \cdots & b_{1m} \\
 \vdots & \vdots & \vdots \\
 b_{j1} & \cdots & b_{jm} \\
-\end{bmatrix}_{j \times m} =
-
+\end{bmatrix}_{j \times m} = 
 \begin{bmatrix}
 (a_{11} \times b_{11} & +~\cdots~+ & a_{1k} \times b_{j1}),~\cdots~,(a_{11} \times b_{1m} & +~\cdots~+ & a_{1k} \times b_{jm}) \\
 \vdots & \vdots & \vdots \\
