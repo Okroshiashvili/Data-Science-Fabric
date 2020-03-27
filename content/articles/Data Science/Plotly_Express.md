@@ -70,25 +70,12 @@ gapminder2007.head()
 ```
 
 ```
-        country continent  year  lifeExp       pop     gdpPercap
-iso_alpha  \
-11  Afghanistan      Asia  2007   43.828  31889923    974.580338
-AFG
-23      Albania    Europe  2007   76.423   3600523   5937.029526
-ALB
-35      Algeria    Africa  2007   72.301  33333216   6223.367465
-DZA
-47       Angola    Africa  2007   42.731  12420476   4797.231267
-AGO
-59    Argentina  Americas  2007   75.320  40301927  12779.379640
-ARG
-
-    iso_num
-11        4
-23        8
-35       12
-47       24
-59       32
+        country continent  year  lifeExp       pop     gdpPercap  iso_alpha  iso_num
+59    Argentina  Americas  2007   75.320  40301927  12779.379640  ARG        4
+11  Afghanistan      Asia  2007   43.828  31889923    974.580338  AFG        8
+23      Albania    Europe  2007   76.423   3600523   5937.029526  ALB        12
+35      Algeria    Africa  2007   72.301  33333216   6223.367465  DZA        24
+47       Angola    Africa  2007   42.731  12420476   4797.231267  AGO        32
 ```
 
 
