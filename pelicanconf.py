@@ -154,7 +154,7 @@ LOAD_CONTENT_CACHE = False
 
 # SEO
 SITE_DESCRIPTION = (
-    "Blog about data science, mathematics and Python"
+    "Blog about data science, mathematics, and Python"
 )
 
 
