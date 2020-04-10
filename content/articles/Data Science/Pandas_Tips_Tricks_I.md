@@ -1,5 +1,5 @@
 Title: Lost in Pandas: #1
-Date: 2019-04-10 19:14
+Date: 2020-04-10 19:14
 Category: Data Science
 Tags: pandas, python, data analysis, pandas tips and tricks
 Author: Nodar Okroshiashvili
