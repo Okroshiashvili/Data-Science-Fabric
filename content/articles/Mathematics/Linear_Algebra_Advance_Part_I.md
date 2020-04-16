@@ -1,9 +1,10 @@
 Title: Advances of Linear Algebra with Python - Part I
 Date: 2019-03-04 12:14
 Category: Mathematics
-Tags: Linear Algebra, Python, Numpy, Scipy
+Tags: Advance Linear Algebra
+Keywords: eigenvectors and eigenvalues in python, gauss and gauss-jordan elimination with python, matrix image and kernel, advances of linear algebra with python, linear algebra advances with python, numpy, scipy
 Author: Nodar Okroshiashvili
-Summary: This is a advance part of Linear Algebra with Python
+Summary: This is the first part of advance linear algebra with Python
 
 This is the first part of the fourth and last post in blog series about linear algebra. 
 
@@ -16,21 +17,31 @@ This is the first part of the fourth and last post in blog series about linear a
 In this post I will introduce you to the advances of linear algebra, which in turn includes the following:
 
 
-* [Vector](#Vector)
-    * [Basis Vectors](#Basis_Vectors)
-* [Matrix](#Matrix)
-    * [Gaussian Elimination of a Matrix](#Gaussian_Elimination_of_a_Matrix)
-    * [Gauss-Jordan Elimination of a Matrix](#Gauss_Jordan_Elimination_of_a_Matrix)
-    * [The Inverse of a Matrix Using Gauss-Jordan Elimination](#The_Inverse_of_a_Matrix_Using_Gauss_Jordan_Elimination)
-    * [Image of a Matrix](#Image_of_a_Matrix)
-    * [Kernel of a Matrix](#Kernel_of_a_Matrix)
-    * [Rank of a Matrix](#Rank_of_a_Matrix)
-    * [Find the Basis of a Matrix](#Find_the_Basis_of_a_Matrix)
-    * [Transformations](#Transformations)
-    * [Eigenvalues](#Eigenvalues)
-    * [Eigenvectors](#Eigenvectors)
-    * [Spectrum and Spectral Radius](#Spectrum_and_Spectral_Radius)
-    * [Numerical Representation](#Numerical_Representation_Matrix)
+- [Vector](#vector)
+  - [Basis Vectors](#basis-vectors)
+- [Matrix](#matrix)
+  - [Gaussian Elimination of a Matrix](#gaussian-elimination-of-a-matrix)
+  - [Gauss-Jordan Elimination of a Matrix](#gauss-jordan-elimination-of-a-matrix)
+  - [The Inverse of a Matrix Using Gauss-Jordan Elimination](#the-inverse-of-a-matrix-using-gauss-jordan-elimination)
+  - [Image of a Matrix](#image-of-a-matrix)
+  - [Kernel of a Matrix](#kernel-of-a-matrix)
+  - [Rank of a Matrix](#rank-of-a-matrix)
+  - [Find the Basis of a Matrix](#find-the-basis-of-a-matrix)
+  - [Transformations](#transformations)
+    - [Linear Transformation](#linear-transformation)
+    - [Transformations of Magnitude and Amplitude](#transformations-of-magnitude-and-amplitude)
+    - [Affine Transformation](#affine-transformation)
+  - [Eigenvalues](#eigenvalues)
+  - [Eigenvectors](#eigenvectors)
+  - [Spectrum and Spectral Radius](#spectrum-and-spectral-radius)
+  - [Numerical Representation](#numerical-representation)
+    - [Kernel or Null Space of a Matrix](#kernel-or-null-space-of-a-matrix)
+    - [Linear Transformations](#linear-transformations)
+    - [Eigenvalues and Eigenvectors](#eigenvalues-and-eigenvectors)
+  - [Conclusion for part I](#conclusion-for-part-i)
+  - [References](#references)
+    - [Vector](#vector-1)
+    - [Matrix](#matrix-1)
 
 
 ## Vector

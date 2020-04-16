@@ -33,7 +33,8 @@
         "maintenance",
         "projectManagement",
         "review",
-        "tutorial"
+        "tutorial",
+        "tool"
       ]
     },
     {
@@ -108,7 +109,8 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/28266167?v=4",
       "profile": "https://github.com/alxpettit",
       "contributions": [
-        "code"
+        "code",
+        "bug"
       ]
     },
     {
@@ -129,11 +131,115 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "jean",
+      "name": "Jean Jordaan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/84800?v=4",
+      "profile": "https://github.com/jean",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "calfzhou",
+      "name": "calfzhou",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3761553?v=4",
+      "profile": "https://github.com/calfzhou",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "blairconrad",
+      "name": "Blair Conrad",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3275797?v=4",
+      "profile": "http://blairconrad.com",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "neirbowj",
+      "name": "John W. O'Brien",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1879063?v=4",
+      "profile": "https://github.com/neirbowj",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "knz",
+      "name": "kena",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/642886?v=4",
+      "profile": "https://github.com/knz",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "0x8BADFOOD",
+      "name": "Mobile Developer",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3933496?v=4",
+      "profile": "http://0x8badfood.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "duhoobo",
+      "name": "Hungpo DU",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2430317?v=4",
+      "profile": "http://ialloc.org",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "ShaunaGordon",
+      "name": "Shauna Gordon",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/579361?v=4",
+      "profile": "http://shaunagordon.com",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "AWegnerGitHub",
+      "name": "A Wegner",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6462439?v=4",
+      "profile": "https://github.com/AWegnerGitHub",
+      "contributions": [
+        "code",
+        "doc",
+        "bug",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "7rack",
+      "name": "vimxiang",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4596875?v=4",
+      "profile": "http://www.7rack.info",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "maneesha",
+      "name": "maneesha sane",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/829690?v=4",
+      "profile": "https://github.com/maneesha",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "elegant",
   "projectOwner": "Pelican-Elegant",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }

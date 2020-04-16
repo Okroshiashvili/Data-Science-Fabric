@@ -1,7 +1,8 @@
 Title: Lost in Pandas: #1
 Date: 2020-04-10 19:14
 Category: Data Science
-Tags: pandas, python, data analysis, pandas tips and tricks
+Tags: Pandas, Analytics
+Keywords: pandas, python, data analysis, pandas tips and tricks, advance pandas, data transformation in pandas, flatten dict in pandas
 Author: Nodar Okroshiashvili
 Summary: Practical Pandas tips and tricks from everyday use
 
@@ -13,7 +14,7 @@ I use it all the time when I want to do data analysis, either it is simple calcu
 Pandas is so simple in its form. However, imagine, how much you can do with some simple method chaining.
 
 
-Saying all of these, this blog aims to share my experience and amaizment with Pandas. 
+Saying all of these, this blog aims to share my experience and amazment with Pandas. 
 This series is not meant for beginner users and will not be short in length. These series will be based on my experience and 
 I will try to give a detailed explanation for every step from problem definition to solving it. That's enough for now. Let get down to business.
 

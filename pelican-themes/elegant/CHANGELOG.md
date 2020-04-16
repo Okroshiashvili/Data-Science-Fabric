@@ -1,3 +1,112 @@
+# [5.3.0](https://github.com/Pelican-Elegant/elegant/compare/V5.2.1...V5.3.0) (2020-02-05)
+
+### Bug Fixes
+
+- **gallery:** change gallery grid to fit on smaller screens ([d4c1c50](https://github.com/Pelican-Elegant/elegant/commit/d4c1c506d24c61e18089d303ea88bb69db077135))
+- **gallery:** replace photoswipe-gallery with elegant-gallery ([17a05da](https://github.com/Pelican-Elegant/elegant/commit/17a05daec5d3aa077b96175e97ae5feda6884d9e))
+
+### Features
+
+- **comments:** add support for CommentBox ([c56e61e](https://github.com/Pelican-Elegant/elegant/commit/c56e61eb60a84d4d65ca2e55e068b6f0f3a87ee1))
+
+## [5.2.1](https://github.com/Pelican-Elegant/elegant/compare/V5.2.0...V5.2.1) (2020-02-04)
+
+### Bug Fixes
+
+- **blockquote:** regression introduced in last version ([2aace21](https://github.com/Pelican-Elegant/elegant/commit/2aace21d633e11527a224c7201abad5fef811ce3))
+
+# [5.2.0](https://github.com/Pelican-Elegant/elegant/compare/V5.1.0...V5.2.0) (2020-02-03)
+
+### Bug Fixes
+
+- regression introduced due to cache busting ([b953a38](https://github.com/Pelican-Elegant/elegant/commit/b953a382d77e99884b82800d7392ceb8eae8d77d))
+- **archives:** at smaller screen layout does not make the best use of available space ([a289e9d](https://github.com/Pelican-Elegant/elegant/commit/a289e9db411b6abeb79a6028a3b0778070f6f553))
+- **syntax:** code blocks with line numbers do not have the correct border radius ([3a34a3e](https://github.com/Pelican-Elegant/elegant/commit/3a34a3e6b9741e44bc34d723627b0da162fdfa82))
+- **syntax:** improve the font size and height of download button ([07595b3](https://github.com/Pelican-Elegant/elegant/commit/07595b3dbd31feef16aee3e907d3c4fc34574e0d))
+- **typography:** fix font size and style of TOC ([2d597ab](https://github.com/Pelican-Elegant/elegant/commit/2d597abd095de8ce8ac72d8ae77b4914d9daeeed)), closes [#509](https://github.com/Pelican-Elegant/elegant/issues/509)
+- Categories and Tags pages do not have space below the header ([d78f4e5](https://github.com/Pelican-Elegant/elegant/commit/d78f4e5add9ca7778967d4c5da02053187c3cbd4))
+- remove invalid CSS rule ([368cb2c](https://github.com/Pelican-Elegant/elegant/commit/368cb2cad4b00b40446e7ad1d5357228e48ec34c))
+- use consistent color for border ([c85b7b8](https://github.com/Pelican-Elegant/elegant/commit/c85b7b84d6ac64a73941ad73ba031fd2f4ddac0f))
+- use darker color for the site name ([19f37ca](https://github.com/Pelican-Elegant/elegant/commit/19f37caf937bd864aaf6b1532078936ad79edf1d))
+- **article:** use loclate_date attribute instead of hardcoding the date format ([1da552c](https://github.com/Pelican-Elegant/elegant/commit/1da552c94775766657f4ee9a0c05e7bcd7f1adf9)), closes [#552](https://github.com/Pelican-Elegant/elegant/issues/552)
+- **bootstrap:** WIP. add Bootstrapv2.3.2 sources file to the project ([43ee8eb](https://github.com/Pelican-Elegant/elegant/commit/43ee8eb2ad6ba22bac6660bdb514857dadf9bcab)), closes [#429](https://github.com/Pelican-Elegant/elegant/issues/429)
+- **seo:** regression introduced in PR [#556](https://github.com/Pelican-Elegant/elegant/issues/556) ([28bcb85](https://github.com/Pelican-Elegant/elegant/commit/28bcb8592cf595761d96904b004df3f425259849)), closes [#505](https://github.com/Pelican-Elegant/elegant/issues/505)
+- **typography:** about me and my projects heading is not on one line ([6a7989c](https://github.com/Pelican-Elegant/elegant/commit/6a7989cc17f46a4ee1075dfe66b03d858956e7c7))
+- **typography:** font size of superscript number in categories and tags page ([d0a7162](https://github.com/Pelican-Elegant/elegant/commit/d0a71622bfe23e86478b7727e590dbf8e3a7b87f))
+- **typography:** override Bootstrap base font ([f6a83a6](https://github.com/Pelican-Elegant/elegant/commit/f6a83a6f31e24754e5001260336b89e9107e1053)), closes [#429](https://github.com/Pelican-Elegant/elegant/issues/429)
+- **typography:** top menu bar does not have correct height ([d30ce82](https://github.com/Pelican-Elegant/elegant/commit/d30ce82aa8ba366555cbeee55ffb08e70110df0a))
+- **typography:** use consistent font and color for project list ([477a467](https://github.com/Pelican-Elegant/elegant/commit/477a467bd4bf69a86d71bceb3ac2385b43c57a8c))
+- **typography:** use consistent font in the footer ([eeb0e30](https://github.com/Pelican-Elegant/elegant/commit/eeb0e30be3664c86e7b37a151cf1992daa7fd46e))
+
+### Features
+
+- add support cache busting ([cde0dc5](https://github.com/Pelican-Elegant/elegant/commit/cde0dc54c68412d8db43ea371e98e6d14e99b9d2))
+- **categories:** change background color of uncollapsed Category ([6cc11b8](https://github.com/Pelican-Elegant/elegant/commit/6cc11b8efe8a3c97ccfeddc244a5b84465fff1fb))
+- **gallery:** add support for PhotoSwipe image gallery using raw HTML ([ad1bcea](https://github.com/Pelican-Elegant/elegant/commit/ad1bcea67f5515c8c448e1c7009f3ba01965d574)), closes [#567](https://github.com/Pelican-Elegant/elegant/issues/567)
+- **js:** combine and minify all JS files into one to improve load speed ([f5047d4](https://github.com/Pelican-Elegant/elegant/commit/f5047d4cbce02a187f1b04f11f026817ed1757d9))
+- **search:** improve search results page look ([73fa743](https://github.com/Pelican-Elegant/elegant/commit/73fa743723ebbf35b6cd0e0f51c9497634b1474c)), closes [#573](https://github.com/Pelican-Elegant/elegant/issues/573) [#275](https://github.com/Pelican-Elegant/elegant/issues/275)
+- **search:** replace tipue_search with lunr.js ([9d60af1](https://github.com/Pelican-Elegant/elegant/commit/9d60af14c4065cee90289e48705714865dbbcb9e)), closes [#275](https://github.com/Pelican-Elegant/elegant/issues/275)
+- **SEO:** Add header and documentation for Claiming Website on Yandex ([2bb691d](https://github.com/Pelican-Elegant/elegant/commit/2bb691d3bd02f9d586206814992306383640a84c))
+- **SEO:** add SEO and SMO meta keywords in site's home page ([c5be0eb](https://github.com/Pelican-Elegant/elegant/commit/c5be0eb7f9e98c9938ae96ca8eb9c48c7482993e))
+- **sharing:** Enable customizing the sharing links ([f3e262f](https://github.com/Pelican-Elegant/elegant/commit/f3e262f3dc6a2b1a4356014e524018603d899fb2))
+- **syntax:** add copy to clipboard button for every code snippet ([6f73317](https://github.com/Pelican-Elegant/elegant/commit/6f733179b80d8225af71bc5945be1fddd98b40ae)), closes [#574](https://github.com/Pelican-Elegant/elegant/issues/574) [#525](https://github.com/Pelican-Elegant/elegant/issues/525)
+- **syntax:** add support for highlighting lines in code snippets ([ba2de8c](https://github.com/Pelican-Elegant/elegant/commit/ba2de8ccf971b1e77abe24960532f664e00ef9d9)), closes [#520](https://github.com/Pelican-Elegant/elegant/issues/520)
+- **syntax:** add support for liquid_tags.include_code plugin ([0550a3a](https://github.com/Pelican-Elegant/elegant/commit/0550a3ab2fa5526a6db7e233f755cdfa36f9db38)), closes [#518](https://github.com/Pelican-Elegant/elegant/issues/518)
+- **syntax:** use Gruvbox syntax highlighting theme ([0b50ab1](https://github.com/Pelican-Elegant/elegant/commit/0b50ab1565dd1fa700cea9e4c6cb963bd9591b9f))
+- **typography:** use consistent fonts ([8b7a8bd](https://github.com/Pelican-Elegant/elegant/commit/8b7a8bd3c828baf1dd3434b75a5bd050a4279495)), closes [#429](https://github.com/Pelican-Elegant/elegant/issues/429)
+- **typography:** use consistent style for timestamps in tags, categories and archives pages ([a421dcd](https://github.com/Pelican-Elegant/elegant/commit/a421dcdbc42d87bcff2bfdeb3f3f19e5e6e8c3c2))
+- **typography:** use dns-prefetch and preconnect to improve font load time ([e4bd582](https://github.com/Pelican-Elegant/elegant/commit/e4bd582858df6925bbc5c0dff59e62b1cd8c5390))
+- **typography:** use responsive fonts ([39acdbf](https://github.com/Pelican-Elegant/elegant/commit/39acdbf4503ee9cdd7163672cba28c24b47d6647))
+
+# [5.1.0](https://github.com/Pelican-Elegant/elegant/compare/V5.0.1...V5.1.0) (2019-12-05)
+
+### Bug Fixes
+
+- **applause:** applause_button tag does not auto close ([d37e691](https://github.com/Pelican-Elegant/elegant/commit/d37e691e0592bded8dd42531ceacfa61147ad078))
+- **typography:** make headings align to the left instead of justify ([101285e](https://github.com/Pelican-Elegant/elegant/commit/101285e0884ea365e9e3272e6f914fe373fa27fb))
+
+### Features
+
+- **applause:** add option to set applause_button_id ([8eda9a4](https://github.com/Pelican-Elegant/elegant/commit/8eda9a4cc7c588ff09a520e9f7fa183d1fb11031))
+- **applause:** add support for applause button ([e4872fd](https://github.com/Pelican-Elegant/elegant/commit/e4872fd558964c3007c516fc616314c88de49eef)), closes [#532](https://github.com/Pelican-Elegant/elegant/issues/532)
+- **applause:** simplify filter option ([9f8b60f](https://github.com/Pelican-Elegant/elegant/commit/9f8b60fc3cbc08e7e21cef08f7e44658131677dd))
+
+## [5.0.1](https://github.com/Pelican-Elegant/elegant/compare/V5.0.0...V5.0.1) (2019-12-04)
+
+### Bug Fixes
+
+- **blockquote:** close quote is not aligned properly ([80a85c7](https://github.com/Pelican-Elegant/elegant/commit/80a85c714a16cd01c53831347ac1f18b397dda1a))
+- **typography:** remove unit from line height ([10286a1](https://github.com/Pelican-Elegant/elegant/commit/10286a13fade3248cc752a3ac5416257920d07bf))
+
+# [5.0.0](https://github.com/Pelican-Elegant/elegant/compare/V4.0.0...V5.0.0) (2019-12-02)
+
+### Bug Fixes
+
+- **css:** linter warning ([a5f5c81](https://github.com/Pelican-Elegant/elegant/commit/a5f5c8170a61683edf5737918b7fe3cae1b67c00))
+- **page:** social profiles appear in the sidebar ([c17077c](https://github.com/Pelican-Elegant/elegant/commit/c17077cbd24811bb91e48610ac13d76328e5398d)), closes [#534](https://github.com/Pelican-Elegant/elegant/issues/534)
+- **social:** reduce icon size in the sidebar ([4e0dc41](https://github.com/Pelican-Elegant/elegant/commit/4e0dc415c114bb07304605c9b1c153e372f1fa4b)), closes [#490](https://github.com/Pelican-Elegant/elegant/issues/490)
+- **typography:** adjust heading sizes and set small font-style to italic ([d3bbf04](https://github.com/Pelican-Elegant/elegant/commit/d3bbf04eabcd89bdb2f039b11fac7a6150729e90))
+- **typography:** remove border from headings in archive page ([817bea8](https://github.com/Pelican-Elegant/elegant/commit/817bea8d091e99b6d6e5fc3dcc63ba6f627c5b66))
+
+### Features
+
+- **blockquote:** improve blockquote look ([068d50a](https://github.com/Pelican-Elegant/elegant/commit/068d50a455d57e4706525908b174bbc4606c6fb6))
+- **border:** change border radius of tags and code blocks to match rest of the theme ([5d0285f](https://github.com/Pelican-Elegant/elegant/commit/5d0285f156a5da734b438868674c632b897625ef)), closes [#521](https://github.com/Pelican-Elegant/elegant/issues/521)
+- **border:** have consistent border radius ([7307467](https://github.com/Pelican-Elegant/elegant/commit/7307467579d4ab1931987e48b83224eb666e9e5e)), closes [#521](https://github.com/Pelican-Elegant/elegant/issues/521)
+- **code-block:** minor refine code-block style ([2ba2232](https://github.com/Pelican-Elegant/elegant/commit/2ba22321b35961ebc18dbb2c25f1db535fad64ed))
+- **css:** use PostCSS for processing CSS files ([2b88865](https://github.com/Pelican-Elegant/elegant/commit/2b88865a36780257ac42173b949b5d7b4df516e9)), closes [#354](https://github.com/Pelican-Elegant/elegant/issues/354)
+- **links:** add new style and improve existing style for hyperlinks ([87fd3d3](https://github.com/Pelican-Elegant/elegant/commit/87fd3d3f88cebac83ca04460ef41e7356df0ccd2)), closes [#533](https://github.com/Pelican-Elegant/elegant/issues/533) [#519](https://github.com/Pelican-Elegant/elegant/issues/519)
+- **permalink:** improve permalink look ([8059ca8](https://github.com/Pelican-Elegant/elegant/commit/8059ca84b77ab82bffd1ed80f010235f9ca57ed6))
+- **security:** use rel="noopener noreferrer" with all target="\_blank" ([4c843e9](https://github.com/Pelican-Elegant/elegant/commit/4c843e9a0c66bb2656ef5df4411d4c891c493a11)) <!-- yaspeller ignore -->
+- **typography:** code inside heading is consistently 80% of the size ([7180b49](https://github.com/Pelican-Elegant/elegant/commit/7180b49ebb659d00a82f10769269e6236057e42c)), closes [#508](https://github.com/Pelican-Elegant/elegant/issues/508)
+- **typography:** headings sizes and other properties are consistent ([afa99ab](https://github.com/Pelican-Elegant/elegant/commit/afa99ab89baf715a68627552152b7163ea0534b9)), closes [#508](https://github.com/Pelican-Elegant/elegant/issues/508) [#521](https://github.com/Pelican-Elegant/elegant/issues/521)
+- **typography:** use darker color for article heading and increase border size ([1922075](https://github.com/Pelican-Elegant/elegant/commit/19220758aabf431ae3566b950436fe04a3ee21a8))
+
+### BREAKING CHANGES
+
+- **links:** Style of muted links have been changed slightly. It is
+  still muted but has modern animation.
+
 # [4.0.0](https://github.com/Pelican-Elegant/elegant/compare/V3.2.0...V4.0.0) (2019-08-22)
 
 ### Bug Fixes
@@ -9,7 +118,7 @@
 - **clean URL:** default URL of categories, tags and archives fails on some servers ([3c7df6a](https://github.com/Pelican-Elegant/elegant/commit/3c7df6a)), closes [#280](https://github.com/Pelican-Elegant/elegant/issues/280) [#276](https://github.com/Pelican-Elegant/elegant/issues/276)
 - **comments:** W3C validation errors ([76a1f26](https://github.com/Pelican-Elegant/elegant/commit/76a1f26))
 - **disqus:** remove SITEURL condition to show Disqus comments section ([753d5a5](https://github.com/Pelican-Elegant/elegant/commit/753d5a5))
-- **lang:** do not override default value of DEFAULT_LANG set by Pelican ([d6c60c2](https://github.com/Pelican-Elegant/elegant/commit/d6c60c2))
+- **lang:** do not override default value of DEFAULT_LANG set by Pelican ([d6c60c2](https://github.com/Pelican-Elegant/elegant/commit/d6c60c2)) <!-- yaspeller ignore -->
 - **social:** reduce icon sizes in the sidebar ([c769ba3](https://github.com/Pelican-Elegant/elegant/commit/c769ba3))
 - **social:** use nofollow for social links in the sidebar ([50cff87](https://github.com/Pelican-Elegant/elegant/commit/50cff87))
 - **social:** W3C validation error ([ec4521e](https://github.com/Pelican-Elegant/elegant/commit/ec4521e))
@@ -27,23 +136,22 @@
 - **admonition:** add box shadow ([246f826](https://github.com/Pelican-Elegant/elegant/commit/246f826))
 - **admonition:** border color should match the title color ([1adadbe](https://github.com/Pelican-Elegant/elegant/commit/1adadbe))
 - **admonition:** increase contrast of title ([7fb82cc](https://github.com/Pelican-Elegant/elegant/commit/7fb82cc))
-- **admonition:** use svg image instead of font-awesome icon ([e7c4029](https://github.com/Pelican-Elegant/elegant/commit/e7c4029)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
+- **admonition:** use svg image instead of font-awesome icon ([e7c4029](https://github.com/Pelican-Elegant/elegant/commit/e7c4029)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487) <!-- yaspeller ignore -->
 - **clean url:** support clean URL for search page ([088791e](https://github.com/Pelican-Elegant/elegant/commit/088791e))
 - **comments:** add support for utterances comment system ([a2151cc](https://github.com/Pelican-Elegant/elegant/commit/a2151cc)), closes [#288](https://github.com/Pelican-Elegant/elegant/issues/288)
 - **quotes:** improve style and remove font-awesome for quote icon ([9ef3ac8](https://github.com/Pelican-Elegant/elegant/commit/9ef3ac8)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
 - **social:** add icons for 7 more websites ([8dcf8fa](https://github.com/Pelican-Elegant/elegant/commit/8dcf8fa)), closes [#494](https://github.com/Pelican-Elegant/elegant/issues/494)
-- **social:** use svg icons instead of font-awesome ([19f458b](https://github.com/Pelican-Elegant/elegant/commit/19f458b))
+- **social:** use svg icons instead of font-awesome ([19f458b](https://github.com/Pelican-Elegant/elegant/commit/19f458b)) <!-- yaspeller ignore -->
 - **table:** add style rule to make tables pop out ([6a8500b](https://github.com/Pelican-Elegant/elegant/commit/6a8500b)), closes [#440](https://github.com/Pelican-Elegant/elegant/issues/440)
 
 ### Performance Improvements
 
-- **admonition:** add attributes to svg iamges ([a740a60](https://github.com/Pelican-Elegant/elegant/commit/a740a60))
+- **admonition:** add attributes to svg images ([a740a60](https://github.com/Pelican-Elegant/elegant/commit/a740a60)) <!-- yaspeller ignore -->
 - **requests:** remove font awesome ([7c20145](https://github.com/Pelican-Elegant/elegant/commit/7c20145)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
 
 ### BREAKING CHANGES
 
-- **requests:** We have removed font awesome. Now we use svg images for all icons. This will result
-  in one less web request, which in turn will improve your websites performance.
+- **requests:** We have removed font awesome. Now we use svg images for all icons. This will result in one less web request, which in turn will improve your websites performance. <!-- yaspeller ignore -->
 - **social:** Style customization and configuration of social icons
   in the sidebar has changed.
 
@@ -58,7 +166,7 @@ New icons have better colors and bigger sizes.
 
 ### Bug Fixes
 
-- **freelists:** open FreeLists subscription form in a new tab ([f81657c](https://github.com/Pelican-Elegant/elegant/commit/f81657c))
+- **freelists:** open FreeLists subscription form in a new tab ([f81657c](https://github.com/Pelican-Elegant/elegant/commit/f81657c)) <!-- yaspeller ignore -->
 - **freelists:** replace deprecated subscription form with button ([9bfe3c1](https://github.com/Pelican-Elegant/elegant/commit/9bfe3c1)), closes [#412](https://github.com/Pelican-Elegant/elegant/issues/412)
 - **freelists:** remove unused include ([27f0831](https://github.com/Pelican-Elegant/elegant/commit/27f0831))
 
@@ -126,8 +234,8 @@ New icons have better colors and bigger sizes.
 - **footer:** open exit links in new tab ([8fd9f28](https://github.com/Pelican-Elegant/elegant/commit/8fd9f28))
 - **footer:** optionally show the host information ([9de2dab](https://github.com/Pelican-Elegant/elegant/commit/9de2dab))
 - **footer:** powered by message is always aligned to the right ([5e47b7c](https://github.com/Pelican-Elegant/elegant/commit/5e47b7c))
-- **footer:** remove fixed height by using flexbox for sticky footer ([d9d84e1](https://github.com/Pelican-Elegant/elegant/commit/d9d84e1))
-- **footer:** use flexbox instead of list for items in the footer ([bef7db9](https://github.com/Pelican-Elegant/elegant/commit/bef7db9))
+- **footer:** remove fixed height by using flexbox for sticky footer ([d9d84e1](https://github.com/Pelican-Elegant/elegant/commit/d9d84e1)) <!-- yaspeller ignore -->
+- **footer:** use flexbox instead of list for items in the footer ([bef7db9](https://github.com/Pelican-Elegant/elegant/commit/bef7db9)) <!-- yaspeller ignore -->
 - **onelink:** add Amazon Affiliate Disclosure ([cbfa6ac](https://github.com/Pelican-Elegant/elegant/commit/cbfa6ac))
 
 # Version 2.3.0
@@ -141,7 +249,7 @@ New icons have better colors and bigger sizes.
 
 ## Features
 
-- New: FontAwesome updated to version 4.7.0
+- New: FontAwesome updated to version 4.7.0 <!-- yaspeller ignore -->
 - New: `Photos` plugin support for photo gallery creation
 - New: Lightbox support for `Photos` plugin
 - Fixed: Amazon One Link div is in the header
@@ -242,7 +350,7 @@ New icons have better colors and bigger sizes.
 - Next and previous article navigation is placed below comments section so that article's content and comments appear together
 - Article title and site name in `<title>` tag is separated by `·` which is cleaner and more subtle than `-`
 - Subtitle of articles and pages is added in `<title>` tag along with main title
-- Description meta tag on Home Page uses `SITE_DESCRIPTION`
+- Description metadata tag on Home Page uses `SITE_DESCRIPTION`
 - Bug fix: Expand comments section if URL points to a comment
 - Bug fix: CSS style of links in an unordered list inside article content is different from article links
 
@@ -258,13 +366,13 @@ New icons have better colors and bigger sizes.
 # Version 1.1
 
 - Add template for pages. Pages do not have tags, category and Disqus comments
-- Keep style of a hyperlink in `modified` meta data consisted with the theme
-- Add `keywords` meta tag that uses keywords, tags and category attribute of articles and pages
+- Keep style of a hyperlink in `modified` metadata consisted with the theme
+- Add `keywords` metadata tag that uses keywords, tags and category attribute of articles and pages
 - Validate search form for empty strings
 - If `RECENT_ARTICLES_COUNT` is undefined, set it to 10. So that Pelican does not throw critical error
 - Bug fix: Path of search.html in search form action should always be absolute
-- Bug fix: Copyright meta tag should be set to the author, instead of the license
-- Bug fix: Close meta tags
+- Bug fix: Copyright metadata tag should be set to the author, instead of the license
+- Bug fix: Close metadata tags
 - Bug fix: ID of search form in 404 page should be different from the ID of search form in main navigation
 - Bug fix: Links in ordered list in an article do not conform to the link style in rest of the article
 

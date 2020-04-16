@@ -150,14 +150,19 @@ LOAD_CONTENT_CACHE = False
 #RELATIVE_URLS = True
 
 
-
-
 # SEO
 SITE_DESCRIPTION = (
-    "Blog about data science, mathematics, and Python"
+    "Blog about data science, machine learning, natural language processing, mathematics, and Python"
 )
 
 
 LANDING_PAGE_TITLE = "Unstructured Thoughts"
 
+
+SITE_LICENSE = """Content licensed under <a rel="license nofollow noopener noreferrer"
+    href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+    Creative Commons Attribution 4.0 International License</a>."""
+
+# Show applause button for all articles
+APPLAUSE_BUTTON = True
 

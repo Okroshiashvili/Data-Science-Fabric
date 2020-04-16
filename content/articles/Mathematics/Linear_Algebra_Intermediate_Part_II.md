@@ -1,7 +1,8 @@
 Title: Intermediates of Linear Algebra with Python - Part II
 Date: 2019-03-03 12:14
 Category: Mathematics
-Tags: Linear Algebra, Python, Numpy, Scipy
+Tags: Intermediate Linear Algebra
+Keywords: intermediate linear algebra with python, matrices and matrix operations in python, matrix norms in python, python, numpy, scipy, sympy, linear algebra for machine learning, linear algebra, machine learning
 Author: Nodar Okroshiashvili
 Summary: This is an intermediate part of Linear Algebra with Python
 
@@ -17,23 +18,27 @@ This is the second part of third post in blog series about linear algebra.
 This is the continuation of the part one and in this post I will introduce you the following topics:
 
 
-* [Matrix](#Matrix)
-    * [Types of Matrices](#Types_of_Matrices)
-    * [Trace of a Matrix](#Trace_of_a_Matrix)
-    * [Determinant of a Matrix](#Determinant_of_a_Matrix)
-    * [Minor of a Matrix](#Minor_of_a_Matrix)
-    * [Cofactor of a Matrix](#Cofactor_of_a_Matrix)
-    * [Determinant of a Matrix - continuation](#Determinant_of_a_Matrix_continuation)
-    * [Matrix Division](#Matrix_Division)
-    * [Inverse of a Matrix](#Inverse_of_a_Matrix)
-    * [Matrix Division - continuation](#Inverse_of_a_Matrix_continuation)
-    * [Solving Systems of Equations with Matrices](#Solving_System_of_Equations_with_Matrices)
-    * [Elemenraty Row Operations](#Elementary_Row_Operations)
-    * [Rank of a Matrix](#Rank_of_a_Matrix)
-    * [Power of a Matrix](#Power_of_a_Matrix)
-    * [Norm of a Matrix](#Norm_of_a_Matrix)
-    * [Numerical Representation](#Numerical_Representation_Matrix)
-* [Conclusion](#Conclusion)
+- [$$](#math-xmlns%22httpwwww3org1998mathmathml%22semanticsmrowmrowannotation-encoding%22applicationx-tex%22annotationsemanticsmath)
+- [$$](#math-xmlns%22httpwwww3org1998mathmathml%22semanticsmrowmrowannotation-encoding%22applicationx-tex%22annotationsemanticsmath-1)
+    - [Matrix Division - continuation](#matrix-division---continuation)
+    - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices)
+    - [Elementary Row Operations](#elementary-row-operations)
+    - [Rank of a Matrix](#rank-of-a-matrix)
+    - [Power of a Matrix](#power-of-a-matrix)
+    - [Norm of a Matrix](#norm-of-a-matrix)
+    - [Numerical Representation](#numerical-representation)
+      - [Types of Matrices](#types-of-matrices-1)
+      - [Trace of a Matrix](#trace-of-a-matrix-1)
+      - [Determinant of a Matrix](#determinant-of-a-matrix-1)
+      - [Inverse of a Matrix](#inverse-of-a-matrix-1)
+      - [Matrix Division](#matrix-division-1)
+      - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices-1)
+      - [Rank of a Matrix](#rank-of-a-matrix-1)
+      - [Power of a Matrix](#power-of-a-matrix-1)
+      - [Norm of a Matrix](#norm-of-a-matrix-1)
+  - [Conclusion](#conclusion)
+    - [References](#references)
+      - [Matrix](#matrix-1)
 
 
 ## Matrix

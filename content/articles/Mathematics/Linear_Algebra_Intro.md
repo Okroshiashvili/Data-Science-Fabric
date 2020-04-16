@@ -1,7 +1,8 @@
 Title: Introduction to Linear Algebra with Python
 Date: 2019-03-01 12:14
 Category: Mathematics
-Tags: Linear Algebra, Python, Numpy, Scipy
+Tags: Linear Algebra
+Keywords: linear algebra, linear algebra with python, introduction to linear algebra with python, python, numpy, scipy
 Author: Nodar Okroshiashvili
 Summary: This is introduction into the Linear Algebra Series
 

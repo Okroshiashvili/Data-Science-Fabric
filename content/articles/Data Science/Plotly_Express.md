@@ -2,9 +2,10 @@ Title: Simple Interactive Data Visualization with Plotly Express
 Date: 2019-03-22 12:14
 Modified: 2020-03-26 20:53
 Category: Data Science
-Tags: plotly, plotly express, python, data visualization
+Tags: Plotly, Data Visualization
+Keywords: plotly, plotly express, python, data visualization, interactive data visualization, plotly dashboards
 Author: Nodar Okroshiashvili
-Summary: Interactive, yet simple data visualization with plotly express
+Summary: Interactive data visualization with plotly express
 
 I fairly believe that, if someone is good at data visualization he/she at least has heard about Hans Rosling. 
 One of the most influential data storyteller, and honestly because of the [talk](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen) he gave at TED, 

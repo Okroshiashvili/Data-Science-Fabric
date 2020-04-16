@@ -1,5 +1,7 @@
 ---
+author: Nodar Okroshiashvili
 date: 2019-09-04
+layout: page
 slug: landing-page-about-hidden
 status: hidden
 title: About Me

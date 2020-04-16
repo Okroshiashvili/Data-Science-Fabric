@@ -1,7 +1,8 @@
 Title: Taylor Series Expansion with Python
 Date: 2019-05-09 14:14
 Category: Mathematics
-Tags: Taylor Series Expansion, Maclaurin Series Expansion, Python, Numpy, Scipy, Sympy
+Tags: Taylor Series Expansion
+Keywords: taylor series expansion with python, maclaurin series expansion with python, python mathematics, numpy, scipy, sympy
 Author: Nodar Okroshiashvili
 Summary: Taylor and Maclaurin Series Expansion for functions with Python
 
@@ -324,4 +325,3 @@ Moreover, some training algorithms for neural networks, such as **Steepest Desce
 - [Wikipedia](https://en.wikipedia.org/wiki/Taylor_series)
 
 - [Khan Academy](https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-11/v/maclaurin-and-taylor-series-intuition)
-

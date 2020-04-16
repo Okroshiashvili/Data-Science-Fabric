@@ -4,28 +4,48 @@
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
+<!-- prettier-ignore-start -->
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://azzamsa.com/"><img src="https://avatars2.githubusercontent.com/u/17734314?v=4" width="100px;" alt="azzamsa"/><br /><sub><b>azzamsa</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://iranzo.github.io"><img src="https://avatars0.githubusercontent.com/u/312463?v=4" width="100px;" alt="Pablo Iranzo Gómez"/><br /><sub><b>Pablo Iranzo Gómez</b></sub></a><br /><a href="#infra-iranzo" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Tests">⚠️</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Documentation">📖</a> <a href="#question-iranzo" title="Answering Questions">💬</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Airanzo" title="Bug reports">🐛</a> <a href="#blog-iranzo" title="Blogposts">📝</a> <a href="#content-iranzo" title="Content">🖋</a> <a href="#ideas-iranzo" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-iranzo" title="Maintenance">🚧</a> <a href="#projectManagement-iranzo" title="Project Management">📆</a> <a href="#review-iranzo" title="Reviewed Pull Requests">👀</a> <a href="#tutorial-iranzo" title="Tutorials">✅</a></td>
-    <td align="center"><a href="https://github.com/cszhe"><img src="https://avatars1.githubusercontent.com/u/3096714?v=4" width="100px;" alt="Jason He"/><br /><sub><b>Jason He</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Acszhe" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://ashwinvis.github.io"><img src="https://avatars2.githubusercontent.com/u/9155111?v=4" width="100px;" alt="Ashwin Vishnu"/><br /><sub><b>Ashwin Vishnu</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=ashwinvis" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=ashwinvis" title="Tests">⚠️</a></td>
-    <td align="center"><a href="https://github.com/codecachet"><img src="https://avatars1.githubusercontent.com/u/45950182?v=4" width="100px;" alt="codecachet"/><br /><sub><b>codecachet</b></sub></a><br /><a href="#ideas-codecachet" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/jackdewinter"><img src="https://avatars1.githubusercontent.com/u/25124582?v=4" width="100px;" alt="jackdewinter"/><br /><sub><b>jackdewinter</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=jackdewinter" title="Documentation">📖</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Ajackdewinter" title="Bug reports">🐛</a> <a href="#content-jackdewinter" title="Content">🖋</a></td>
-    <td align="center"><a href="https://seisman.info"><img src="https://avatars2.githubusercontent.com/u/3974108?v=4" width="100px;" alt="Dongdong Tian"/><br /><sub><b>Dongdong Tian</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Aseisman" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://azzamsa.com/"><img src="https://avatars2.githubusercontent.com/u/17734314?v=4" width="100px;" alt=""/><br /><sub><b>azzamsa</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://iranzo.github.io"><img src="https://avatars0.githubusercontent.com/u/312463?v=4" width="100px;" alt=""/><br /><sub><b>Pablo Iranzo Gómez</b></sub></a><br /><a href="#infra-iranzo" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Tests">⚠️</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Documentation">📖</a> <a href="#question-iranzo" title="Answering Questions">💬</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Airanzo" title="Bug reports">🐛</a> <a href="#blog-iranzo" title="Blogposts">📝</a> <a href="#content-iranzo" title="Content">🖋</a> <a href="#ideas-iranzo" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-iranzo" title="Maintenance">🚧</a> <a href="#projectManagement-iranzo" title="Project Management">📆</a> <a href="https://github.com/Pelican-Elegant/elegant/pulls?q=is%3Apr+reviewed-by%3Airanzo" title="Reviewed Pull Requests">👀</a> <a href="#tutorial-iranzo" title="Tutorials">✅</a> <a href="#tool-iranzo" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://github.com/cszhe"><img src="https://avatars1.githubusercontent.com/u/3096714?v=4" width="100px;" alt=""/><br /><sub><b>Jason He</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Acszhe" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://ashwinvis.github.io"><img src="https://avatars2.githubusercontent.com/u/9155111?v=4" width="100px;" alt=""/><br /><sub><b>Ashwin Vishnu</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=ashwinvis" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=ashwinvis" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/codecachet"><img src="https://avatars1.githubusercontent.com/u/45950182?v=4" width="100px;" alt=""/><br /><sub><b>codecachet</b></sub></a><br /><a href="#ideas-codecachet" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/jackdewinter"><img src="https://avatars1.githubusercontent.com/u/25124582?v=4" width="100px;" alt=""/><br /><sub><b>jackdewinter</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=jackdewinter" title="Documentation">📖</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Ajackdewinter" title="Bug reports">🐛</a> <a href="#content-jackdewinter" title="Content">🖋</a></td>
+    <td align="center"><a href="https://seisman.info"><img src="https://avatars2.githubusercontent.com/u/3974108?v=4" width="100px;" alt=""/><br /><sub><b>Dongdong Tian</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Aseisman" title="Bug reports">🐛</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://schnouki.net/"><img src="https://avatars3.githubusercontent.com/u/64833?v=4" width="100px;" alt="Thomas Jost"/><br /><sub><b>Thomas Jost</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=Schnouki" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.fladd.de/code"><img src="https://avatars3.githubusercontent.com/u/2971539?v=4" width="100px;" alt="Florian Krause"/><br /><sub><b>Florian Krause</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Afladd" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/alxpettit"><img src="https://avatars3.githubusercontent.com/u/28266167?v=4" width="100px;" alt="Alexandria"/><br /><sub><b>Alexandria</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=alxpettit" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/andrewdstrain"><img src="https://avatars1.githubusercontent.com/u/29258172?v=4" width="100px;" alt="Andy Strain"/><br /><sub><b>Andy Strain</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=andrewdstrain" title="Code">💻</a> <a href="#userTesting-andrewdstrain" title="User Testing">📓</a></td>
-    <td align="center"><a href="https://github.com/josephzjw"><img src="https://avatars2.githubusercontent.com/u/12767040?v=4" width="100px;" alt="josephzjw"/><br /><sub><b>josephzjw</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Ajosephzjw" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://schnouki.net/"><img src="https://avatars3.githubusercontent.com/u/64833?v=4" width="100px;" alt=""/><br /><sub><b>Thomas Jost</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=Schnouki" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.fladd.de/code"><img src="https://avatars3.githubusercontent.com/u/2971539?v=4" width="100px;" alt=""/><br /><sub><b>Florian Krause</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Afladd" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/alxpettit"><img src="https://avatars3.githubusercontent.com/u/28266167?v=4" width="100px;" alt=""/><br /><sub><b>Alexandria</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=alxpettit" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Aalxpettit" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/andrewdstrain"><img src="https://avatars1.githubusercontent.com/u/29258172?v=4" width="100px;" alt=""/><br /><sub><b>Andy Strain</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=andrewdstrain" title="Code">💻</a> <a href="#userTesting-andrewdstrain" title="User Testing">📓</a></td>
+    <td align="center"><a href="https://github.com/josephzjw"><img src="https://avatars2.githubusercontent.com/u/12767040?v=4" width="100px;" alt=""/><br /><sub><b>josephzjw</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Ajosephzjw" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/jean"><img src="https://avatars3.githubusercontent.com/u/84800?v=4" width="100px;" alt=""/><br /><sub><b>Jean Jordaan</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=jean" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/calfzhou"><img src="https://avatars3.githubusercontent.com/u/3761553?v=4" width="100px;" alt=""/><br /><sub><b>calfzhou</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=calfzhou" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Acalfzhou" title="Bug reports">🐛</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://blairconrad.com"><img src="https://avatars0.githubusercontent.com/u/3275797?v=4" width="100px;" alt=""/><br /><sub><b>Blair Conrad</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Ablairconrad" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/neirbowj"><img src="https://avatars0.githubusercontent.com/u/1879063?v=4" width="100px;" alt=""/><br /><sub><b>John W. O'Brien</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=neirbowj" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/knz"><img src="https://avatars3.githubusercontent.com/u/642886?v=4" width="100px;" alt=""/><br /><sub><b>kena</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=knz" title="Code">💻</a></td>
+    <td align="center"><a href="http://0x8badfood.github.io"><img src="https://avatars1.githubusercontent.com/u/3933496?v=4" width="100px;" alt=""/><br /><sub><b>Mobile Developer</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=0x8BADFOOD" title="Code">💻</a></td>
+    <td align="center"><a href="http://ialloc.org"><img src="https://avatars1.githubusercontent.com/u/2430317?v=4" width="100px;" alt=""/><br /><sub><b>Hungpo DU</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Aduhoobo" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://shaunagordon.com"><img src="https://avatars1.githubusercontent.com/u/579361?v=4" width="100px;" alt=""/><br /><sub><b>Shauna Gordon</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3AShaunaGordon" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/AWegnerGitHub"><img src="https://avatars1.githubusercontent.com/u/6462439?v=4" width="100px;" alt=""/><br /><sub><b>A Wegner</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=AWegnerGitHub" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=AWegnerGitHub" title="Documentation">📖</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3AAWegnerGitHub" title="Bug reports">🐛</a> <a href="#maintenance-AWegnerGitHub" title="Maintenance">🚧</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://www.7rack.info"><img src="https://avatars2.githubusercontent.com/u/4596875?v=4" width="100px;" alt=""/><br /><sub><b>vimxiang</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3A7rack" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/maneesha"><img src="https://avatars0.githubusercontent.com/u/829690?v=4" width="100px;" alt=""/><br /><sub><b>maneesha sane</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=maneesha" title="Documentation">📖</a></td>
   </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- prettier-ignore-end -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
@@ -39,12 +59,6 @@ Following section is the list of contributors that we used to maintain manually.
 [tshepang](https://github.com/tshepang). They are always the first to report
 issues, suggest improvements and submit patches. They have played a huge role
 in making Elegant more elegant.
-
-## [7rack](https://github.com/7rack)
-
-1. He reported an
-   [issue](https://github.com/Pelican-Elegant/elegant/issues/118) with meta
-   tags which happens when article summary is auto-generated by Pelican
 
 ## [Alexis Métaireau](https://github.com/ametaireau)
 
@@ -235,14 +249,4 @@ in making Elegant more elegant.
 
 1. He submitted a [patch](https://github.com/Pelican-Elegant/elegant/pull/2)
    to the project
-
-# 3rd Party Credits
-
-Elegant is standing on the shoulders of these giants.
-
-1. [Tipue Search](http://www.tipue.com/search/)
-1. [Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/)
-1. [Solarized Light theme](http://ethanschoonover.com/solarized) converted to
-   [Pelican Pygments](https://github.com/yuex/pelican-pygments-solarized-css)
-   by [yuex 悟道洞穴人](https://github.com/yuex)
    <!-- yaspeller ignore:end -->

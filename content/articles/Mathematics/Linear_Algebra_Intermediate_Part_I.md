@@ -1,7 +1,8 @@
 Title: Intermediates of Linear Algebra with Python - Part I
 Date: 2019-03-02 15:14
 Category: Mathematics
-Tags: Linear Algebra, Python, Numpy, Scipy
+Tags: Intermediate Linear Algebra
+Keywords: linear algebra in python, vectors in numpy, vector operations in python and numpy, linear algebra for machine learning, python, numpy, scipy, linear algebra, machine learning
 Author: Nodar Okroshiashvili
 Summary: This is an intermediate part of Linear Algebra with Python
 
@@ -18,11 +19,16 @@ This is the first part of the third post in blog series about linear algebra.
 In this post I will introduce you to the intermediates of linear algebra, which in turn includes the following:
 
 
-* [Vector](#Vector)
-    * [Cross Product](#Cross_Product)
-    * [Span](#Span)
-    * [Linear Independence and Dependence](#Linear_Independence_and_Dependence)
-    * [Numerical Representation](#Numerical_Representation)
+- [Vector](#vector)
+  - [Cross Product](#cross-product)
+  - [Span](#span)
+  - [Linear Independence and Dependence](#linear-independence-and-dependence)
+  - [Numerical Representation](#numerical-representation)
+    - [Cross Product](#cross-product-1)
+    - [Linear Independence and Dependence](#linear-independence-and-dependence-1)
+  - [Conclusion for part I](#conclusion-for-part-i)
+  - [References](#references)
+    - [Vector](#vector-1)
 
 
 ## Vector

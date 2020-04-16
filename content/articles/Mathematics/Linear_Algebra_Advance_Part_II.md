@@ -1,9 +1,10 @@
 Title: Advances of Linear Algebra with Python - Part II
 Date: 2019-03-05 12:14
 Category: Mathematics
-Tags: Linear Algebra, Python, Numpy, Scipy
+Tags: Advance Linear Algebra
+Keywords: advance linear algebra, matrix decompositions in python, linear algebra advances in python, advance linear algebra for machine learning
 Author: Nodar Okroshiashvili
-Summary: This is a advance part of Linear Algebra with Python
+Summary: This is the second part of advance linear algebra with Python
 
 
 This is the fourth and last post in blog series about linear algebra.
@@ -18,14 +19,21 @@ This is the fourth and last post in blog series about linear algebra.
 This is the continuation of the part one and in this post I will introduce you the following topics:
 
 
-* [Matrix Decompositions](#Matrix_Decompositions)
-    * [Cholesky Decomposition](#Cholesky_Decomposition)
-    * [QR Decomposition](#QR_Decomposition)
-    * [Eigendecomposition](#Eigendecomposition)
-    * [Singular Value Decomposition](#Singular_Value_Decomposition)
-    * [Inverse of a Square Full Rank Matrix](#Inverse_of_a_Square_Full_Rank_Matrix)
-    * [Numerical Representation](#Numerical_Representation_Decompositions)
-* [Conclusion](#Conclusion)
+- [Matrix Decompositions](#matrix-decompositions)
+  - [Cholesky Decomposition](#cholesky-decomposition)
+  - [QR Decomposition](#qr-decomposition)
+  - [Eigendecomposition](#eigendecomposition)
+  - [Singular Value Decomposition](#singular-value-decomposition)
+  - [Inverse of a Square Full Rank Matrix](#inverse-of-a-square-full-rank-matrix)
+  - [Numerical Representation](#numerical-representation)
+    - [Cholesky Decomposition](#cholesky-decomposition-1)
+    - [QR Decomposition](#qr-decomposition-1)
+    - [Eigendecomposition](#eigendecomposition-1)
+    - [Singular Value Decomposition](#singular-value-decomposition-1)
+    - [Inverse of a Square Full Rank Matrix](#inverse-of-a-square-full-rank-matrix-1)
+- [Conclusion](#conclusion)
+  - [References](#references)
+    - [Matrix Decomposition](#matrix-decomposition)
 
 
 ## Matrix Decompositions

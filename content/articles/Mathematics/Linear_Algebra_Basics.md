@@ -1,7 +1,8 @@
 Title: Basics of Linear Algebra with Python
 Date: 2019-03-02 13:14
 Category: Mathematics
-Tags: Linear Algebra, Python, Numpy, Scipy
+Tags: Linear Algebra Basics
+Keywords: linear algebra basics in python, vectors and matrices with python, linear algebra, machine learning, python, numpy, scipy
 Author: Nodar Okroshiashvili
 Summary: This is a basics of Linear Algebra with Python
 
@@ -19,26 +20,40 @@ This is the second post in blog series about linear algebra.
 In this post I will introduce you to the basics of linear algebra, which in turn includes the following:
 
 
-* [One Variable Equation](#One_Variable_Equation)
-* [Two Variable Equation](#Two_Variable_Equation)
-* [The Systems of Equations](#The_Systems_Of_Equations)
-* [Vector](#Vector)
-    * [Vectors and Vector Notation](#Vectors_And_Vector_Notation)
-    * [Dimensions of Vector](#Dimensions_Of_Vector)
-    * [Operations on Vectors](#Operations_On_Vectors)
-    * [Vector Length](#Vector_Length)
-    * [Unit Vector](#Unit_Vector)
-    * [Scalar Product of Two Vectors](#Scalar_Product_Of_Two_Vectors)
-    * [Numerical Representation](#Numerical_Representation)
-* [Matrix](#Matrix)
-    * [Matrices and Matrix Notation](#Matrices_And_Matrix_Notation)
-    * [Dimension of Matrix](#Dimension_Of_Matrix)
-    * [Matrix Operations](#Matrix_Operations)
-    * [Matrix Transpose](#Matrix_Transpose)
-    * [Identity Matrix](#Identity_Matrix)
-    * [Numerical Representation](#Numerical_Representation_Matrix)
-* [Conclusion](#Conclusion)
-* [References](#References)
+- [One Variable Equation](#one-variable-equation)
+- [Two Variable Equation](#two-variable-equation)
+- [The Systems of Equations](#the-systems-of-equations)
+- [Vectors](#vectors)
+  - [Vectors and Vector Notation](#vectors-and-vector-notation)
+  - [Dimensions of Vector](#dimensions-of-vector)
+  - [Operations on Vectors](#operations-on-vectors)
+  - [Vector Length](#vector-length)
+  - [Unit Vector](#unit-vector)
+  - [Scalar Product of Two Vectors](#scalar-product-of-two-vectors)
+  - [Numerical Representation](#numerical-representation)
+    - [Vector Addition](#vector-addition)
+    - [Scalar Multiplication](#scalar-multiplication)
+    - [Vector Length](#vector-length-1)
+    - [Unit Vector](#unit-vector-1)
+    - [Scalar Product](#scalar-product)
+- [Matrix](#matrix)
+  - [Matrices and Matrix Notation](#matrices-and-matrix-notation)
+  - [Dimension of Matrices](#dimension-of-matrices)
+  - [Matrix Operations](#matrix-operations)
+  - [Matrix Transpose](#matrix-transpose)
+  - [Identity Matrix](#identity-matrix)
+  - [Numerical Representation](#numerical-representation-1)
+    - [Dimension of a Matrix](#dimension-of-a-matrix)
+    - [Matrix Addition and Subtraction](#matrix-addition-and-subtraction)
+    - [Nergative Matrix](#nergative-matrix)
+    - [Matrix - Scalar Multiplication](#matrix---scalar-multiplication)
+    - [Matrix - Matrix Multiplication](#matrix---matrix-multiplication)
+    - [Matrix Transpose](#matrix-transpose-1)
+    - [Matrix - Identity Matrix Multiplication](#matrix---identity-matrix-multiplication)
+- [Conclusion](#conclusion)
+  - [References](#references)
+    - [Vector](#vector)
+    - [Matrix](#matrix-1)
 
 
 ## One Variable Equation
