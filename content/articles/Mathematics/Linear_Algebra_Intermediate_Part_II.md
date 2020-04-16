@@ -27,7 +27,7 @@ This is the continuation of the part one and in this post I will introduce you t
     * [Determinant of a Matrix - continuation](#Determinant_of_a_Matrix_continuation)
     * [Matrix Division](#Matrix_Division)
     * [Inverse of a Matrix](#Inverse_of_a_Matrix)
-    * [Matrix Division - continuation](#Inverse_of_a_Matrix_continuation)
+    * [Matrix Division - continuation](#Matrix_Division_continuation)
     * [Solving Systems of Equations with Matrices](#Solving_System_of_Equations_with_Matrices)
     * [Elemenraty Row Operations](#Elementary_Row_Operations)
     * [Rank of a Matrix](#Rank_of_a_Matrix)
