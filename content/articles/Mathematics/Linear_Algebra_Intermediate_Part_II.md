@@ -18,27 +18,23 @@ This is the second part of third post in blog series about linear algebra.
 This is the continuation of the part one and in this post I will introduce you the following topics:
 
 
-- [\begin{bmatrix}4 & 2 & 2\\6 & 2 & 4\\2 & 2 & 8\end{bmatrix} \cdot \begin{bmatrix}-0.25 & 0.375 & -0.125\\1.25 & -0.875 & 0.125\\-0.25 & 0.125 & 0.125\end{bmatrix}](#beginbmatrix4--2--26--2--42--2--8endbmatrix-cdot-beginbmatrix-025--0375---0125125---0875--0125-025--0125--0125endbmatrix)
-- [(2\times-0.25)+(2\times1.25)+(8\times-0.25) & (2 \times0.375)+(2 \times-0.875)+(8 \times0.125) & (2 \times-0.125)+(2 \times-0.125)+(8 \times0.125)\end{bmatrix}](#2times-0252times1258times-025--2-times03752-times-08758-times0125--2-times-01252-times-01258-times0125endbmatrix)
-    - [Matrix Division - continuation](#matrix-division---continuation)
-    - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices)
-    - [Elementary Row Operations](#elementary-row-operations)
-    - [Rank of a Matrix](#rank-of-a-matrix)
-    - [Power of a Matrix](#power-of-a-matrix)
-    - [Norm of a Matrix](#norm-of-a-matrix)
-    - [Numerical Representation](#numerical-representation)
-      - [Types of Matrices](#types-of-matrices-1)
-      - [Trace of a Matrix](#trace-of-a-matrix-1)
-      - [Determinant of a Matrix](#determinant-of-a-matrix-1)
-      - [Inverse of a Matrix](#inverse-of-a-matrix-1)
-      - [Matrix Division](#matrix-division-1)
-      - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices-1)
-      - [Rank of a Matrix](#rank-of-a-matrix-1)
-      - [Power of a Matrix](#power-of-a-matrix-1)
-      - [Norm of a Matrix](#norm-of-a-matrix-1)
-  - [Conclusion](#conclusion)
-    - [References](#references)
-      - [Matrix](#matrix-1)
+* [Matrix](#Matrix)
+    * [Types of Matrices](#Types_of_Matrices)
+    * [Trace of a Matrix](#Trace_of_a_Matrix)
+    * [Determinant of a Matrix](#Determinant_of_a_Matrix)
+    * [Minor of a Matrix](#Minor_of_a_Matrix)
+    * [Cofactor of a Matrix](#Cofactor_of_a_Matrix)
+    * [Determinant of a Matrix - continuation](#Determinant_of_a_Matrix_continuation)
+    * [Matrix Division](#Matrix_Division)
+    * [Inverse of a Matrix](#Inverse_of_a_Matrix)
+    * [Matrix Division - continuation](#Matrix_Division_continuation)
+    * [Solving Systems of Equations with Matrices](#Solving_System_of_Equations_with_Matrices)
+    * [Elemenraty Row Operations](#Elementary_Row_Operations)
+    * [Rank of a Matrix](#Rank_of_a_Matrix)
+    * [Power of a Matrix](#Power_of_a_Matrix)
+    * [Norm of a Matrix](#Norm_of_a_Matrix)
+    * [Numerical Representation](#Numerical_Representation_Matrix)
+* [Conclusion](#Conclusion)
 
 
 ## Matrix
@@ -857,10 +853,9 @@ Let's verify that the original matrix multiplied by the inverse results in an id
 $$
 A \cdot A^{-1} =
 \begin{bmatrix}4 & 2 & 2\\6 & 2 & 4\\2 & 2 & 8\end{bmatrix} \cdot \begin{bmatrix}-0.25 & 0.375 & -0.125\\1.25 & -0.875 & 0.125\\-0.25 & 0.125 & 0.125\end{bmatrix}
-=
-\begin{bmatrix}(4\times-0.25)+(2\times1.25)+(2\times-0.25) & (4\times0.375)+(2\times-0.875)+(2\times0.125) & (4 \times-0.125)+(2 \times-0.125)+(2 \times0.125)\\
-(6 \times-0.25)+(2\times1.25)+(4\times-0.25) & (6\times0.375)+(2 \times-0.875)+(4\times0.125) & (6 \times-0.125)+(2 \times-0.125)+(4 \times0.125)\\
-(2\times-0.25)+(2\times1.25)+(8\times-0.25) & (2 \times0.375)+(2 \times-0.875)+(8 \times0.125) & (2 \times-0.125)+(2 \times-0.125)+(8 \times0.125)\end{bmatrix}
+$$
+
+$$
 =
 \begin{bmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix} = I
 $$
