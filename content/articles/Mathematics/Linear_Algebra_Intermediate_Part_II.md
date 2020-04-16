@@ -18,7 +18,8 @@ This is the second part of third post in blog series about linear algebra.
 This is the continuation of the part one and in this post I will introduce you the following topics:
 
 
-- [\quad](#quad)
+- [\begin{bmatrix}4 & 2 & 2\\6 & 2 & 4\\2 & 2 & 8\end{bmatrix} \cdot \begin{bmatrix}-0.25 & 0.375 & -0.125\\1.25 & -0.875 & 0.125\\-0.25 & 0.125 & 0.125\end{bmatrix}](#beginbmatrix4--2--26--2--42--2--8endbmatrix-cdot-beginbmatrix-025--0375---0125125---0875--0125-025--0125--0125endbmatrix)
+- [(2\times-0.25)+(2\times1.25)+(8\times-0.25) & (2 \times0.375)+(2 \times-0.875)+(8 \times0.125) & (2 \times-0.125)+(2 \times-0.125)+(8 \times0.125)\end{bmatrix}](#2times-0252times1258times-025--2-times03752-times-08758-times0125--2-times-01252-times-01258-times0125endbmatrix)
     - [Matrix Division - continuation](#matrix-division---continuation)
     - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices)
     - [Elementary Row Operations](#elementary-row-operations)
@@ -856,15 +857,10 @@ Let's verify that the original matrix multiplied by the inverse results in an id
 $$
 A \cdot A^{-1} =
 \begin{bmatrix}4 & 2 & 2\\6 & 2 & 4\\2 & 2 & 8\end{bmatrix} \cdot \begin{bmatrix}-0.25 & 0.375 & -0.125\\1.25 & -0.875 & 0.125\\-0.25 & 0.125 & 0.125\end{bmatrix}
-
-\quad
 =
 \begin{bmatrix}(4\times-0.25)+(2\times1.25)+(2\times-0.25) & (4\times0.375)+(2\times-0.875)+(2\times0.125) & (4 \times-0.125)+(2 \times-0.125)+(2 \times0.125)\\
 (6 \times-0.25)+(2\times1.25)+(4\times-0.25) & (6\times0.375)+(2 \times-0.875)+(4\times0.125) & (6 \times-0.125)+(2 \times-0.125)+(4 \times0.125)\\
 (2\times-0.25)+(2\times1.25)+(8\times-0.25) & (2 \times0.375)+(2 \times-0.875)+(8 \times0.125) & (2 \times-0.125)+(2 \times-0.125)+(8 \times0.125)\end{bmatrix}
-
-\quad
-
 =
 \begin{bmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix} = I
 $$
