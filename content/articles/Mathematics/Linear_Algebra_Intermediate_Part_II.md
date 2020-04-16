@@ -2,9 +2,9 @@ Title: Intermediates of Linear Algebra with Python - Part II
 Date: 2019-03-03 12:14
 Category: Mathematics
 Tags: Intermediate Linear Algebra
-Keywords: intermediate linear algebra with python, matrices and matrix operations in python, matrix norms in python, python, numpy, scipy, sympy, linear algebra for machine learning, linear algebra, machine learning
+Keywords: intermediate linear algebra with python, matrices and matrix operations in python, matrix norms in python, python, numpy, scipy, sympy, linear algebra for machine learning, linear algebra, machine
 Author: Nodar Okroshiashvili
-Summary: This is an intermediate part of Linear Algebra with Python
+Summary: This is the first part of intermediate Linear Algebra with Python
 
 This is the second part of third post in blog series about linear algebra.
 
@@ -18,27 +18,23 @@ This is the second part of third post in blog series about linear algebra.
 This is the continuation of the part one and in this post I will introduce you the following topics:
 
 
-- [$$](#math-xmlns%22httpwwww3org1998mathmathml%22semanticsmrowmrowannotation-encoding%22applicationx-tex%22annotationsemanticsmath)
-- [$$](#math-xmlns%22httpwwww3org1998mathmathml%22semanticsmrowmrowannotation-encoding%22applicationx-tex%22annotationsemanticsmath-1)
-    - [Matrix Division - continuation](#matrix-division---continuation)
-    - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices)
-    - [Elementary Row Operations](#elementary-row-operations)
-    - [Rank of a Matrix](#rank-of-a-matrix)
-    - [Power of a Matrix](#power-of-a-matrix)
-    - [Norm of a Matrix](#norm-of-a-matrix)
-    - [Numerical Representation](#numerical-representation)
-      - [Types of Matrices](#types-of-matrices-1)
-      - [Trace of a Matrix](#trace-of-a-matrix-1)
-      - [Determinant of a Matrix](#determinant-of-a-matrix-1)
-      - [Inverse of a Matrix](#inverse-of-a-matrix-1)
-      - [Matrix Division](#matrix-division-1)
-      - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices-1)
-      - [Rank of a Matrix](#rank-of-a-matrix-1)
-      - [Power of a Matrix](#power-of-a-matrix-1)
-      - [Norm of a Matrix](#norm-of-a-matrix-1)
-  - [Conclusion](#conclusion)
-    - [References](#references)
-      - [Matrix](#matrix-1)
+* [Matrix](#Matrix)
+    * [Types of Matrices](#Types_of_Matrices)
+    * [Trace of a Matrix](#Trace_of_a_Matrix)
+    * [Determinant of a Matrix](#Determinant_of_a_Matrix)
+    * [Minor of a Matrix](#Minor_of_a_Matrix)
+    * [Cofactor of a Matrix](#Cofactor_of_a_Matrix)
+    * [Determinant of a Matrix - continuation](#Determinant_of_a_Matrix_continuation)
+    * [Matrix Division](#Matrix_Division)
+    * [Inverse of a Matrix](#Inverse_of_a_Matrix)
+    * [Matrix Division - continuation](#Inverse_of_a_Matrix_continuation)
+    * [Solving Systems of Equations with Matrices](#Solving_System_of_Equations_with_Matrices)
+    * [Elemenraty Row Operations](#Elementary_Row_Operations)
+    * [Rank of a Matrix](#Rank_of_a_Matrix)
+    * [Power of a Matrix](#Power_of_a_Matrix)
+    * [Norm of a Matrix](#Norm_of_a_Matrix)
+    * [Numerical Representation](#Numerical_Representation_Matrix)
+* [Conclusion](#Conclusion)
 
 
 ## Matrix
@@ -324,9 +320,7 @@ A =
     c & d \\
 \end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 det(A) = ad - bc
 $$
@@ -542,58 +536,42 @@ $$
 C_{11} =
 (-1)^{1+1} \cdot M_{11}
 $$
-$$
-\quad
-$$
+
 $$
 C_{21} =
 (-1)^{2+1} \cdot M_{21}
 $$
-$$
-\quad
-$$
+
 $$
 C_{31} =
 (-1)^{3+1} \cdot M_{31}
 $$
-$$
-\quad
-$$
+
 $$
 C_{12} =
 (-1)^{1+2} \cdot M_{12}
 $$
-$$
-\quad
-$$
+
 $$
 C_{22} =
 (-1)^{2+2} \cdot M_{22}
 $$
-$$
-\quad
-$$
+
 $$
 C_{32} =
 (-1)^{3+2} \cdot M_{32}
 $$
-$$
-\quad
-$$
+
 $$
 C_{13} =
 (-1)^{1+3} \cdot M_{13}
 $$
-$$
-\quad
-$$
+
 $$
 C_{23} =
 (-1)^{2+3} \cdot M_{23}
 $$
-$$
-\quad
-$$
+
 $$
 C_{33} =
 (-1)^{3+3} \cdot M_{33}
@@ -752,58 +730,42 @@ M_{11} =
 \begin{bmatrix}\color{blue}4 & \color{lightgray}2 & \color{lightgray}2\\\color{lightgray}6 & \color{red}2 & \color{red}4\\\color{lightgray}2 & \color{red}2 & \color{red}8\end{bmatrix}\;\;\;\;(2\times8) - (4\times2) = 8\;\;\;\;\begin{bmatrix}8 & \color{lightgray}? & \color{lightgray}?\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?
 \end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 M_{12} =
 \begin{bmatrix}\color{lightgray}4 & \color{blue}2 & \color{lightgray}2\\\color{red}6 & \color{lightgray}2 & \color{red}4\\\color{red}2 & \color{lightgray}2 & \color{red}8\end{bmatrix}\;\;\;\;(6\times8) - (4\times2) = 40\;\;\;\;\begin{bmatrix}8 & 40 & \color{lightgray}?\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 M_{13} =
 \begin{bmatrix}\color{lightgray}4 & \color{lightgray}2 & \color{blue}2\\\color{red}6 & \color{red}2 & \color{lightgray}4\\\color{red}2 & \color{red}2 & \color{lightgray}8\end{bmatrix}\;\;\;\;(6\times2) - (2\times2) = 8\;\;\;\;\begin{bmatrix}8 & 40 & 8\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 M_{21} =
 \begin{bmatrix}\color{lightgray}4 & \color{red}2 & \color{red}2\\\color{blue}6 & \color{lightgray}2 & \color{lightgray}4\\\color{lightgray}2 & \color{red}2 & \color{red}8\end{bmatrix}\;\;\;\;(2\times8) - (2\times2) = 12\;\;\;\;\begin{bmatrix}8 & 40 & 8\\12 & \color{lightgray}? & \color{lightgray}?\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 M_{22} =
 \begin{bmatrix}\color{red}4 & \color{lightgray}2 & \color{red}2\\\color{lightgray}6 & \color{blue}2 & \color{lightgray}4\\\color{red}2 & \color{lightgray}2 & \color{red}8\end{bmatrix}\;\;\;\;(4\times8) - (2\times2) = 28\;\;\;\;\begin{bmatrix}8 & 40 & 8\\12 & 28 & \color{lightgray}?\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 M_{23} =
 \begin{bmatrix}\color{red}4 & \color{red}2 & \color{lightgray}2\\\color{lightgray}6 & \color{lightgray}2 & \color{blue}4\\\color{red}2 & \color{red}2 & \color{lightgray}8\end{bmatrix}\;\;\;\;(4\times2) - (2\times2) = 4\;\;\;\;\begin{bmatrix}8 & 40 & 8\\12 & 28 & 4\\\color{lightgray}? & \color{lightgray}? & \color{lightgray}?\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 M_{31} =
 \begin{bmatrix}\color{lightgray}4 & \color{red}2 & \color{red}2\\\color{lightgray}6 & \color{red}2 & \color{red}4\\\color{blue}2 & \color{lightgray}2 & \color{lightgray}8\end{bmatrix}\;\;\;\;(2\times4) - (2\times2) = 4\;\;\;\;\begin{bmatrix}8 & 40 & 8\\12 & 28 & 4\\4 & \color{lightgray}? & \color{lightgray}?\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 M_{32} =
 \begin{bmatrix}\color{red}4 & \color{lightgray}2 & \color{red}2\\\color{red}6 & \color{lightgray}2 & \color{red}4\\\color{lightgray}2 & \color{blue}2 & \color{lightgray}8\end{bmatrix}\;\;\;\;(4\times4) - (2\times6) = 4\;\;\;\;\begin{bmatrix}8 & 40 & 8\\12 & 28 & 4\\4 & 4 & \color{lightgray}?\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 M_{33} =
 \begin{bmatrix}\color{red}4 & \color{red}2 & \color{lightgray}2\\\color{red}6 & \color{red}2 & \color{lightgray}4\\\color{lightgray}2 & \color{lightgray}2 & \color{blue}8\end{bmatrix}\;\;\;\;(4\times2) - (2\times6) = -4\;\;\;\;\begin{bmatrix}8 & 40 & 8\\12 & 28 & 4\\4 & 4 & -4\end{bmatrix}
@@ -892,18 +854,14 @@ $$
 A \cdot A^{-1} =
 \begin{bmatrix}4 & 2 & 2\\6 & 2 & 4\\2 & 2 & 8\end{bmatrix} \cdot \begin{bmatrix}-0.25 & 0.375 & -0.125\\1.25 & -0.875 & 0.125\\-0.25 & 0.125 & 0.125\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 =
 \begin{bmatrix}(4\times-0.25)+(2\times1.25)+(2\times-0.25) & (4\times0.375)+(2\times-0.875)+(2\times0.125) & (4 \times-0.125)+(2 \times-0.125)+(2 \times0.125)\\
 (6 \times-0.25)+(2\times1.25)+(4\times-0.25) & (6\times0.375)+(2 \times-0.875)+(4\times0.125) & (6 \times-0.125)+(2 \times-0.125)+(4 \times0.125)\\
 (2\times-0.25)+(2\times1.25)+(8\times-0.25) & (2 \times0.375)+(2 \times-0.875)+(8 \times0.125) & (2 \times-0.125)+(2 \times-0.125)+(8 \times0.125)\end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 =
 \begin{bmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix} = I
@@ -1034,9 +992,7 @@ A^{-1} =
     0.3 & -0.1
 \end{bmatrix}
 $$
-$$
-\quad
-$$
+
 $$
 X =
 \begin{bmatrix}
@@ -1115,7 +1071,7 @@ $$
 
 
 Type 3 ERO that multiplies row 2 of $A$ by 4 and replace row 3 of $A$ by $4 \times (\text{row 2 of A}) + \text{row 3 of A}$ 
-would yield row 3 of $A^{'}$ to be $4 \times [1 \ 3 \ 5 \ 6] + [0 \ 1 \ 2 \ 3] = [4 \ 13 \ 22 \ 27]$ and
+would yield row 3 of $A^{'}$ to be $ 4 \times [1 \ 3 \ 5 \ 6] + [0 \ 1 \ 2 \ 3] = [4 \ 13 \ 22 \ 27]$ and
 
 $$
 A^{'} =
@@ -1133,7 +1089,7 @@ matrix of $A$. If $A$ has $m \times n$ dimension we have identity matrix $I_{m \
 by this identity matrix. If we denote the elementary matrix by $E$ then, we multiply $A$ by $E$ in the following way:
 
 $$
-E_{1} \cdot A
+\begin{equation}E_{1} \cdot A \end{equation}
 $$
 
 where $E_{1}$ is ERO one performed on identity matrix.
@@ -1229,9 +1185,7 @@ In the previous post I talked about vector norms but did not mentioned matrix no
 
 Here, I will introduce only the first two types of matrix norm and depict one example of each to give the general idea of matrix norms.
 
-Induced norms usually are denoted by:
-
-$$\|A\|_{p}$$
+Induced norms usually are denoted by: $$\|A\|_p$$
 
 In the special cases of $p = 1, 2, \infty$, the induced matrix norms can be computed by:
 

@@ -4,7 +4,7 @@ Category: Mathematics
 Tags: Intermediate Linear Algebra
 Keywords: linear algebra in python, vectors in numpy, vector operations in python and numpy, linear algebra for machine learning, python, numpy, scipy, linear algebra, machine learning
 Author: Nodar Okroshiashvili
-Summary: This is an intermediate part of Linear Algebra with Python
+Summary: This is the first part of intermediate Linear Algebra with Python
 
 
 This is the first part of the third post in blog series about linear algebra.
