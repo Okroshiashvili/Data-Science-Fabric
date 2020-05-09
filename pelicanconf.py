@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Nodar Okroshiashvili'
 SITENAME = 'Data Science Fabric'
-SITEURL = ""
+SITEURL = "https://dsfabric.org"
 SITESUBTITLE = u"Torture the data, and it will confess to anything. Ronald Coase"
 
 PATH = 'content'
