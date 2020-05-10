@@ -28,16 +28,14 @@ In this post I will introduce you to the intermediates of linear algebra, which 
     - [Linear Independence and Dependence](#linear-independence-and-dependence-1)
   - [Conclusion for part I](#conclusion-for-part-i)
   - [References](#references)
-    - [Vector](#vector-1)
 
 
 ## Vector
-<a id="Vector"></a>
+
 
 
 ### Cross Product
-<a id="Cross_Product"></a>
-***
+
 
 In the case of the dot product between two vectors, we saw that the result is a scalar. In the case of a cross product 
 the result is a vector, so the cross product is also called the vector product. The resulted vector is a vector that is at 
@@ -182,8 +180,7 @@ here, absolute value bars are necessary since the result could be negative and v
 
 
 ### Span
-<a id="Span"></a>
-***
+
 
 suppose we have set of vectors:
 
@@ -272,8 +269,7 @@ This means that by using $A$ or vectors $e_1$, $e_2$ and $e_3$ we can generate a
 
 
 ### Linear Independence and Dependence
-<a id="Linear_Independence_and_Dependence"></a>
-***
+
 
 Above, I mentioned a linear combination. In order to define linear dependence and independence let farther clarify what is a linear combination. If we have a set of vectors
 
@@ -340,7 +336,6 @@ dependent set of vectors. It's easy in this case to spot linear dependence by fi
 
 
 ### Numerical Representation
-<a id="Numerical_Representation"></a>
 
 
 #### Cross Product
@@ -509,10 +504,6 @@ In the second part I review matrices and operations on matrices.
 
 ### References
 
+[Linear Algebra Done Right](http://linear.axler.net/)
 
-#### Vector
-
-- [Linear Algebra Done Right](http://linear.axler.net/)
-
-- [Linear Algebra Topics](https://en.wikipedia.org/wiki/List_of_linear_algebra_topics)
-
+[Linear Algebra Topics](https://en.wikipedia.org/wiki/List_of_linear_algebra_topics)

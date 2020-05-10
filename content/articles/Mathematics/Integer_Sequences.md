@@ -222,7 +222,7 @@ plt.show()
 
 
 
-## Sylvester's sequence
+## Sylvester's Sequence
 
 
 In the **[Sylvester's sequence](https://en.wikipedia.org/wiki/Sylvester%27s_sequence)**, each element is the product of previous terms, plus one. 
@@ -268,7 +268,7 @@ plt.show()
 
 
 
-## Fermat number
+## Fermat Number
 
 
 **[Fermat number or Fermat sequence](https://en.wikipedia.org/wiki/Fermat_number)**, named after well-known Pierre de Fermat, forms the sequence 
