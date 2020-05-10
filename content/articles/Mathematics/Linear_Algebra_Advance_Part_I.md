@@ -34,22 +34,17 @@ In this post I will introduce you to the advances of linear algebra, which in tu
   - [Eigenvalues](#eigenvalues)
   - [Eigenvectors](#eigenvectors)
   - [Spectrum and Spectral Radius](#spectrum-and-spectral-radius)
-  - [Numerical Representation](#numerical-representation)
-    - [Kernel or Null Space of a Matrix](#kernel-or-null-space-of-a-matrix)
-    - [Linear Transformations](#linear-transformations)
-    - [Eigenvalues and Eigenvectors](#eigenvalues-and-eigenvectors)
-  - [Conclusion for part I](#conclusion-for-part-i)
-  - [References](#references)
-    - [Vector](#vector-1)
-    - [Matrix](#matrix-1)
+- [Numerical Representation](#numerical-representation)
+  - [Kernel or Null Space of a Matrix](#kernel-or-null-space-of-a-matrix)
+  - [Linear Transformations](#linear-transformations)
+  - [Eigenvalues and Eigenvectors](#eigenvalues-and-eigenvectors)
+- [Conclusion for part I](#conclusion-for-part-i)
+- [References](#references)
 
 
 ## Vector
-<a id="Vector"></a>
 
 ### Basis Vectors
-<a id="Basis_Vectors"></a>
-***
 
 In the [basics](https://dsfabric.org/articles/mathematics/basics-of-linear-algebra.html), we saw what is a unit vector. 
 To refresh, the unit vector is the vector with length 1 and the formula is
@@ -156,11 +151,8 @@ These notions are explained below and after that, we can find the basis for each
 
 
 ## Matrix
-<a id="Matrix"></a>
 
 ### Gaussian Elimination of a Matrix
-<a id="Gaussian_Elimination_of_a_Matrix"></a>
-***
 
 In linear algebra, Gaussian Elimination is the method to solve the system of linear equations. 
 This method is the sequence of operations performed on the coefficient matrix of the system. 
@@ -353,8 +345,6 @@ The matrix obtained in step 5 above is in Row-Echelon form as it satisfied above
 
 
 ### Gauss-Jordan Elimination of a Matrix
-<a id="Gauss_Jordan_Elimination_of_a_Matrix"></a>
-***
 
 Gaussian elimination performs row operations to produce zeros below the main diagonal of the coefficient matrix to 
 reduce it to row echelon form. Once it's done we perform back substitution to find the solution. However, we can 
@@ -371,7 +361,7 @@ Form matrix is the result of Gauss-Jordan Elimination process.
 
 We can continue our example from step 5 and see what is Gauss-Jordan elimination. At step 5 we had
 
-5. $R3 \rightarrow R3 \cdot -\frac{1}{11}$
+1. $R3 \rightarrow R3 \cdot -\frac{1}{11}$
 
 $$
 \begin{bmatrix}
@@ -450,8 +440,6 @@ Reduced Row Echelon Form of our initial coefficient matrix $A$.
 
 
 ### The Inverse of a Matrix Using Gauss-Jordan Elimination
-<a id="The_Inverse_of_a_Matrix_Using_Gauss_Jordan_Elimination"></a>
-***
 
 Suppose, we have given the matrix and want to find its inverse but do not want to use the technique mentioned 
 in the intermediate post. We can use Gauss-Jordan elimination with little modification to find the inverse of a matrix. 
@@ -573,8 +561,6 @@ $$
 
 
 ### Image of a Matrix
-<a id="Image_of_a_Matrix"></a>
-***
 
 Let $A$ be $m\times n$ matrix. Space spanned by its column vectors are called range, image, or column space of a matrix $A$. 
 The row space is defined similarly. I only consider column space as all the logic is the same for row space.
@@ -639,8 +625,6 @@ The set of all such vectors is the column space of $A$.
 
 
 ### Kernel of a Matrix
-<a id="Kernel_of_a_Matrix"></a>
-***
 
 In linear algebra, the kernel or a.k.a null space is the solution of the following homogeneous system:
 
@@ -770,8 +754,6 @@ Note, that both original matrix $A$ and its row-echelon for has the same kernel.
 
 
 ### Rank of a Matrix
-<a id="Rank_of_a_Matrix"></a>
-***
 
 In the intermediate tutorial, you saw how to calculate the determinant of a matrix and also saw that any non zero determinant 
 of sub-matrix of the original matrix shows its non-degenerateness. In other words, nonzero determinant gives us information 
@@ -830,8 +812,6 @@ From the last matrix we see that the nonzero determinant only exists in $2\times
 
 
 ### Find the Basis of a Matrix
-<a id="Find_the_Basis_of_a_Matrix"></a>
-***
 
 Now we are able to find the basis for column space and row space as well as the basis for the kernel. 
 The columns of a matrix $A$ span the column space but they may not form a basis if the column vectors are linearly dependent. 
@@ -962,8 +942,6 @@ The resulted vector is one set of the basis for kernel space. The values for $x_
 
 
 ### Transformations
-<a id="Transformations"></a>
-***
 
 Matrices and vectors are used together to manipulate spatial dimensions. This has a lot of applications, 
 including the mathematical generation of 3D computer graphics, geometric modeling, and the training and optimization of 
@@ -1179,8 +1157,6 @@ This kind of transformation is actually the basic block of linear regression, wh
 
 
 ### Eigenvalues
-<a id="Eigenvalues"></a>
-***
 
 Let consider matrix $A$
 
@@ -1312,8 +1288,6 @@ From first feature we have that the matrix is invertible if and only if all its 
 
 
 ### Eigenvectors
-<a id="Eigenvectors"></a>
-***
 
 It's time to calculate eigenvectors, but let firstly define what is eigenvector and how it relates to the eigenvalue.
 
@@ -1398,8 +1372,6 @@ Finding eigenvectors for $\lambda = 2$ and $\lambda = 11$ is up to you.
 
 
 ### Spectrum and Spectral Radius
-<a id="Spectrum_and_Spectral_Radius"></a>
-***
 
 The **Spectral Radius** of a square matrix $A$ is the largest absolute values of its eigenvalues and is denoted by $\rho(A)$. More formally,
 
@@ -1440,11 +1412,9 @@ From above example we had three eigenvalues, $\lambda = 2$, $\lambda = 1$ and $\
 of $A$ and spectral radius for our matrix $A$ is $\lambda = 11$
 
 
-### Numerical Representation
-<a id="Numerical_Representation_Matrix"></a>
+## Numerical Representation
 
-#### Kernel or Null Space of a Matrix
-
+### Kernel or Null Space of a Matrix
 
 ```python
 
@@ -1503,7 +1473,7 @@ Unnormalized Kernel
 
 
 
-#### Linear Transformations
+### Linear Transformations
 
 
 ```python
@@ -1643,7 +1613,7 @@ Resulted vector is: t = [ 5 -2]
 ![picture]({static}../../images/Linear_Algebra_Advance_Part_I_figure5_1.png)
 
 
-#### Eigenvalues and Eigenvectors
+### Eigenvalues and Eigenvectors
 
 
 ```python
@@ -1678,24 +1648,16 @@ Eigenvectors are:
 ```
 
 
-
-
-### Conclusion for part I
+## Conclusion for part I
 
 In conclusion, part one is relatively heavy but as it contains lots of calculations. That's why we use computers to solve this kind of problems. Despite Numpy's build in functions there is big avenue to write algorithm to compute eigenvalues for instance. That would be very helpful for practicing linear algebra and python simultaneously.
 
 The second part is devoted solely for matrix decompositions.
 
 
-### References
+## References
 
 
-#### Vector
+[Linear Algebra Done Right](http://linear.axler.net/)
 
-- [Linear Algebra Done Right](http://linear.axler.net/)
-
-
-#### Matrix
-
-- [Linear Algebra Topics](https://en.wikipedia.org/wiki/List_of_linear_algebra_topics)
-
+[Linear Algebra Topics](https://en.wikipedia.org/wiki/List_of_linear_algebra_topics)

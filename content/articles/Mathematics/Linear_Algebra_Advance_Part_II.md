@@ -25,19 +25,17 @@ This is the continuation of the part one and in this post I will introduce you t
   - [Eigendecomposition](#eigendecomposition)
   - [Singular Value Decomposition](#singular-value-decomposition)
   - [Inverse of a Square Full Rank Matrix](#inverse-of-a-square-full-rank-matrix)
-  - [Numerical Representation](#numerical-representation)
-    - [Cholesky Decomposition](#cholesky-decomposition-1)
-    - [QR Decomposition](#qr-decomposition-1)
-    - [Eigendecomposition](#eigendecomposition-1)
-    - [Singular Value Decomposition](#singular-value-decomposition-1)
-    - [Inverse of a Square Full Rank Matrix](#inverse-of-a-square-full-rank-matrix-1)
+- [Numerical Representation](#numerical-representation)
+  - [Cholesky Decomposition](#cholesky-decomposition-1)
+  - [QR Decomposition](#qr-decomposition-1)
+  - [Eigendecomposition](#eigendecomposition-1)
+  - [Singular Value Decomposition](#singular-value-decomposition-1)
+  - [Inverse of a Square Full Rank Matrix](#inverse-of-a-square-full-rank-matrix-1)
 - [Conclusion](#conclusion)
-  - [References](#references)
-    - [Matrix Decomposition](#matrix-decomposition)
+- [References](#references)
 
 
 ## Matrix Decompositions
-<a id="Matrix_Decompositions"></a>
 
 In linear algebra, matrix decomposition or matrix factorization is a factorization of a matrix into a product of matrices. 
 Factorizing a matrix means that we want to find a product of matrices that is equal to the initial matrix. 
@@ -46,8 +44,6 @@ Below, I will consider some of them, mostly applicable to machine learning or de
 
 
 ### Cholesky Decomposition
-<a id="Cholesky_Decomposition"></a>
-***
 
 The Cholesky Decomposition is the factorization of a given **symmetric** square matrix $A$ into the product of a 
 lower triangular matrix, denoted by $L$ and its transpose $L^{T}$. This decomposition is named after French artillery 
@@ -179,8 +175,6 @@ Multiplication of this matrices is up to you.
 
 
 ### QR Decomposition
-<a id="QR_Decomposition"></a>
-***
 
 QR decomposition is another type of matrix factorization, where a given $m \times n$ matrix $A$ is decomposed into 
 two matrices, $Q$ which is orthogonal matrix, which in turn means that $QQ^{T} = Q^{T}Q = I$ and the inverse of $Q$ 
@@ -198,8 +192,6 @@ post series and hence I'm going to explain all of them in separate blog posts. C
 
 
 ### Eigendecomposition
-<a id="Eigendecomposition"></a>
-***
 
 Here is the question. What's the usage of eigenvalues and eigenvectors? Besides other usages, they help us to perform 
 matrix decomposition and this decomposition is called eigendecomposition or spectral decomposition. In the case of the 
@@ -314,8 +306,6 @@ To verify all of this calculation see Python code below.
 
 
 ### Singular Value Decomposition
-<a id="Singular_Value_Decomposition"></a>
-***
 
 Singular Value Decomposition (SVD) is another way of matrix factorization. It is the generalization of the eigendecomposition. 
 In this context, generalization means that eigendecomposition is applicable only for square $n \times n$ matrices, 
@@ -470,8 +460,6 @@ $$
 
 
 ### Inverse of a Square Full Rank Matrix
-<a id="Inverse_of_a_Square_Full_Rank_Matrix"></a>
-***
 
 Here, I want to present one more way to find the inverse of a matrix and show you one more usage of eigendecomposition. 
 Let's get started. If a matrix $A$ can be eigendecomposed and it has no any eigenvalue equal to zero, 
@@ -533,10 +521,9 @@ A^{-1} = Q \Lambda^{-1} Q^{-1} =
 $$
 
 
-### Numerical Representation
-<a id="Numerical_Representation_Decompositions"></a>
+## Numerical Representation
 
-#### Cholesky Decomposition
+### Cholesky Decomposition
 
 
 ```python
@@ -568,7 +555,7 @@ array([[ True,  True,  True],
 
 
 
-#### QR Decomposition
+### QR Decomposition
 
 
 ```python
@@ -612,7 +599,7 @@ A = QR
 
 
 
-#### Eigendecomposition
+### Eigendecomposition
 
 
 ```python
@@ -688,7 +675,7 @@ Decomposed matrix D:
 
 
 
-#### Singular Value Decomposition
+### Singular Value Decomposition
 
 
 ```python
@@ -732,7 +719,7 @@ B = [[ 0.          1.         -0.        ]
 
 
 
-#### Inverse of a Square Full Rank Matrix
+### Inverse of a Square Full Rank Matrix
 
 
 ```python
@@ -774,8 +761,6 @@ The inverse of A is
 
 
 ## Conclusion
-<a id="Conclusion"></a>
-***
 
 In conclusion, my aim was to make linear algebra tutorials which are in absence, while learning machine learning or deep learning. 
 Particularly, existing materials either are pure mathematics books which cover lots of unnecessary(actually they are necessary) 
@@ -787,13 +772,10 @@ Based on my experience, these tutorials are not enough to master the concepts an
 be continuous. Meaning, that you have to practice more and more.
 
 
-### References
-<a id="References"></a>
+## References
 
-#### Matrix Decomposition
+[Cholesky Decomposition](https://rosettacode.org/wiki/Cholesky_decomposition)
 
-- [Cholesky Decomposition](https://rosettacode.org/wiki/Cholesky_decomposition)
+[Matrix Decomposition](https://en.wikipedia.org/wiki/Matrix_decomposition)
 
-- [Matrix Decomposition](https://en.wikipedia.org/wiki/Matrix_decomposition)
-
-- [Introduction To Linear Algebra](http://math.mit.edu/~gs/linearalgebra/)
+[Introduction To Linear Algebra](http://math.mit.edu/~gs/linearalgebra/)

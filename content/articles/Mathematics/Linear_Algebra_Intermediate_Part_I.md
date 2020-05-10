@@ -23,19 +23,16 @@ In this post I will introduce you to the intermediates of linear algebra, which 
   - [Cross Product](#cross-product)
   - [Span](#span)
   - [Linear Independence and Dependence](#linear-independence-and-dependence)
-  - [Numerical Representation](#numerical-representation)
-    - [Cross Product](#cross-product-1)
-    - [Linear Independence and Dependence](#linear-independence-and-dependence-1)
-  - [Conclusion for part I](#conclusion-for-part-i)
-  - [References](#references)
+- [Numerical Representation](#numerical-representation)
+  - [Cross Product](#cross-product-1)
+  - [Linear Independence and Dependence](#linear-independence-and-dependence-1)
+- [Conclusion for part I](#conclusion-for-part-i)
+- [References](#references)
 
 
 ## Vector
 
-
-
 ### Cross Product
-
 
 In the case of the dot product between two vectors, we saw that the result is a scalar. In the case of a cross product 
 the result is a vector, so the cross product is also called the vector product. The resulted vector is a vector that is at 
@@ -180,7 +177,6 @@ here, absolute value bars are necessary since the result could be negative and v
 
 
 ### Span
-
 
 suppose we have set of vectors:
 
@@ -335,12 +331,9 @@ There is a nontrivial linear combination with $c_{1} = 2$ and $c_{2} = 1$ that y
 dependent set of vectors. It's easy in this case to spot linear dependence by first glance, as the second vector is 2 times the first vector, which indicates linear dependence.
 
 
-### Numerical Representation
+## Numerical Representation
 
-
-#### Cross Product
-
-
+### Cross Product
 
 ```python
 
@@ -371,7 +364,6 @@ Cross Product is:
 This figure below shows the span of $A = \{a_1, a_2\}$ in $\mathbb{R}^3$.
 
 The span is a 2 dimensional plane passing through these two points and the origin
-
 
 
 ```python
@@ -446,9 +438,7 @@ plt.show()
 ![picture]({static}../../images/Linear_Algebra_Intermediate_Part_I_figure2_1.png)
 
 
-#### Linear Independence and Dependence
-
-
+### Linear Independence and Dependence
 
 ```python
 
@@ -474,7 +464,6 @@ print(inds)
 This says that the vectors at index 0 and 1 are linearly independent. Let consider a linearly dependent set of vectors to see the result of the above code clearly.
 
 
-
 ```python
 
 matrix = np.array([[0,1,0,0],[0,0,1,0],[0,1,1,0],[1,0,0,1]]) # this is our set of vectors
@@ -489,11 +478,10 @@ print(inds)
 ```
 
 
-
 This says that vectors at index 0, 1, and 3 are linearly independent, while vector at index 2 is linearly dependent.
 
 
-### Conclusion for part I
+## Conclusion for part I
 
 Here, I only covered half of the materials that I initially had intended to cover. 
 I split those materials into two parts, mainly because to improve readability and maintain consistency.
@@ -501,8 +489,7 @@ I split those materials into two parts, mainly because to improve readability an
 In the second part I review matrices and operations on matrices.
 
 
-
-### References
+## References
 
 [Linear Algebra Done Right](http://linear.axler.net/)
 

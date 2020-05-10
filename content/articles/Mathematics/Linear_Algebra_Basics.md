@@ -30,35 +30,31 @@ In this post I will introduce you to the basics of linear algebra, which in turn
   - [Vector Length](#vector-length)
   - [Unit Vector](#unit-vector)
   - [Scalar Product of Two Vectors](#scalar-product-of-two-vectors)
-  - [Numerical Representation](#numerical-representation)
-    - [Vector Addition](#vector-addition)
-    - [Scalar Multiplication](#scalar-multiplication)
-    - [Vector Length](#vector-length-1)
-    - [Unit Vector](#unit-vector-1)
-    - [Scalar Product](#scalar-product)
+- [Numerical Representation](#numerical-representation)
+  - [Vector Addition](#vector-addition)
+  - [Scalar Multiplication](#scalar-multiplication)
+  - [Vector Length](#vector-length-1)
+  - [Unit Vector](#unit-vector-1)
+  - [Scalar Product](#scalar-product)
 - [Matrix](#matrix)
   - [Matrices and Matrix Notation](#matrices-and-matrix-notation)
   - [Dimension of Matrices](#dimension-of-matrices)
   - [Matrix Operations](#matrix-operations)
   - [Matrix Transpose](#matrix-transpose)
   - [Identity Matrix](#identity-matrix)
-  - [Numerical Representation](#numerical-representation-1)
-    - [Dimension of a Matrix](#dimension-of-a-matrix)
-    - [Matrix Addition and Subtraction](#matrix-addition-and-subtraction)
-    - [Nergative Matrix](#nergative-matrix)
-    - [Matrix - Scalar Multiplication](#matrix---scalar-multiplication)
-    - [Matrix - Matrix Multiplication](#matrix---matrix-multiplication)
-    - [Matrix Transpose](#matrix-transpose-1)
-    - [Matrix - Identity Matrix Multiplication](#matrix---identity-matrix-multiplication)
+- [Numerical Representation](#numerical-representation-1)
+  - [Dimension of a Matrix](#dimension-of-a-matrix)
+  - [Matrix Addition and Subtraction](#matrix-addition-and-subtraction)
+  - [Negative Matrix](#negative-matrix)
+  - [Matrix - Scalar Multiplication](#matrix---scalar-multiplication)
+  - [Matrix - Matrix Multiplication](#matrix---matrix-multiplication)
+  - [Transpose](#transpose)
+  - [Identity Matrix Multiplication](#identity-matrix-multiplication)
 - [Conclusion](#conclusion)
-  - [References](#references)
-    - [Vector](#vector)
-    - [Matrix](#matrix-1)
+- [References](#references)
 
 
 ## One Variable Equation
-<a id="One_Variable_Equation"></a>
-
 
 Generally, equations state that two things are equal. They contain one or more variables and solving them means to find the value of those variable to make equality true. This value is known as a solution. 
 
@@ -83,9 +79,7 @@ True
 
 
 
-
 ## Two Variable Equation
-<a id="Two_Variable_Equation"></a>
 
 Equations with two variables are known as linear equations.
 
@@ -234,8 +228,6 @@ So what does that actually mean? Well, if we start from any point on the blue li
 
 
 ## The Systems of Equations
-<a id="The_Systems_Of_Equations"></a>
-
 
 To have the system of equations means that we have two or more linear equations together and we have to solve 
 them simultaneously to make the equality true. There are three possible solutions of the linear system. 
@@ -374,12 +366,8 @@ plt.show()
 
 
 ## Vectors
-<a id="Vector"></a>
-
 
 ### Vectors and Vector Notation
-<a id="Vectors_And_Vector_Notation"></a>
-***
 
 In plain English, the vector is a directed arrow. Mathematically, the vector is an object that has magnitude and direction. 
 Magnitude is the length of the vector and direction is from its tail to its end. In other words, imagine vector as the line 
@@ -433,8 +421,6 @@ plt.show()
 
 
 ### Dimensions of Vector
-<a id="Dimensions_Of_Vector"></a>
-***
 
 The dimension of vector is the number of elements in it. For example, the above vector is row vector with 
 dimension $1\times n$, but if we take it as a column vector its dimension will be $n\times 1$.
@@ -457,8 +443,6 @@ $$
 
 
 ### Operations on Vectors
-<a id="Operations_On_Vectors"></a>
-***
 
 The most common operations on vectors are vector addition/subtraction and scalar multiplication.
 
@@ -537,8 +521,6 @@ $$
 
 
 ### Vector Length
-<a id="Vector_Length"></a>
-***
 
 The vector length or magnitude is calculated by the following formula:
 
@@ -573,8 +555,6 @@ $$
 
 
 ### Unit Vector
-<a id="Unit_Vector"></a>
-***
 
 What if the length of a vector equal to 1? This kind of vector is known as unit vector and it plays a very important 
 role in different calculations and formulae. We'll see it in later posts, but here unit vector is defined as 
@@ -597,10 +577,7 @@ $$
 
 
 
-
 ### Scalar Product of Two Vectors
-<a id="Scalar_Product_Of_Two_Vectors"></a>
-***
 
 Multiplication of two vectors is known as dot product, scalar product, or inner product and is defined by: 
 
@@ -620,9 +597,7 @@ where $\cos{\theta}$ is an angle between the vectors $\vec{X}$ and $\vec{Y}$.
 
 
 
-### Numerical Representation
-<a id="Numerical_Representation"></a>
-
+## Numerical Representation
 
 
 ```python
@@ -645,7 +620,7 @@ The dimension of X is: (3,)
 
 
 
-#### Vector Addition
+### Vector Addition
 
 
 ```python
@@ -655,8 +630,6 @@ print(X + Y)
 ```
 [3 6 9]
 ```
-
-
 
 
 ```python
@@ -684,8 +657,7 @@ Red is vector $\vec{V}$, blue is $\vec{W}$ and green is the sum of these two vec
 
 
 
-#### Scalar Multiplication
-
+### Scalar Multiplication
 
 
 ```python
@@ -701,10 +673,7 @@ print(5 * X)
 ```
 
 
-
-
-#### Vector Length
-
+### Vector Length
 
 
 ```python
@@ -728,10 +697,7 @@ print(np.linalg.norm(X))
 ```
 
 
-
-
-#### Unit Vector
-
+### Unit Vector
 
 
 ```python
@@ -749,8 +715,6 @@ Vector n = [0.26726124 0.53452248 0.80178373]
 ```
 
 
-
-
 ```python
 # If we take length of vector n, we'll get 1
 
@@ -762,10 +726,7 @@ The length of vector n is: 1.0
 ```
 
 
-
-
-#### Scalar Product
-
+### Scalar Product
 
 
 ```python
@@ -807,12 +768,9 @@ Angle theta is: 0.0
 
 
 ## Matrix
-<a id="Matrix"></a>
-
 
 ### Matrices and Matrix Notation
-<a id="Matrices_And_Matrix_Notation"></a>
-***
+
 
 Matrix is a rectangular array of numbers and/or expressions that are arranged into rows and columns. 
 These rows and columns can be considered as row and column vectors. So, the matrix is the rectangular array 
@@ -835,8 +793,6 @@ For example, $a_{2,1}$ denotes element at the cross of the second row and first 
 
 
 ### Dimension of Matrices
-<a id="Dimension_Of_Matrix"></a>
-***
 
 If a matrix $A$ has $n$ rows and $m$ columns, we call $A$ an $n\times m$ matrix and it is read as **"n by m matrix"**. 
 A typical $n\times m$ matrix $A$ can be written as:
@@ -867,10 +823,8 @@ $$
 
 
 ### Matrix Operations
-<a id="Matrix_Operations"></a>
-***
 
-We add two matrices elementwise. To exist this addition we require that the dimensions of the two matrices coincide. 
+We add two matrices element-wise. To exist this addition we require that the dimensions of the two matrices coincide. 
 If we have two matrices, $A$ and $B$, addition is defined by:
 
 $$
@@ -894,7 +848,7 @@ $$
 
 Matrix subtraction is defined in the same fashion as the addition.
 
-The nagative of a matrix, is just a matrix with the sign of each element reversed:
+The negative of a matrix, is just a matrix with the sign of each element reversed:
 
 $$
 A =
@@ -969,8 +923,6 @@ simpler example and some extra source to take a look.
 
 
 ### Matrix Transpose
-<a id="Matrix_Transpose"></a>
-***
 
 In the above example, we saw that the matrix is the collection of vectors. We also know that vectors can be horizontal 
 as well as vertical, or row and column vectors. Now, what if we change in any matrix row vectors into column vectors? 
@@ -1002,8 +954,6 @@ $$
 
 
 ### Identity Matrix
-<a id="Identity_Matrix"></a>
-***
 
 There are several different types of matrices. In this post, we will introduce only **identity matix**. 
 Future post will introduce other types of matrices. An identity matrix (usually indicated by a capital $I$) 
@@ -1023,13 +973,10 @@ $$
 Multiplying any matrix by an identity matrix is the same as multiplying a number by 1; the result is the same as the original value:
 
 
-### Numerical Representation
-<a id="Numerical_Representation_Matrix"></a>
+## Numerical Representation
 
 
-#### Dimension of a Matrix
-
-
+### Dimension of a Matrix
 
 ```python
 import numpy as np
@@ -1054,11 +1001,7 @@ Dimensions of A is: (3, 3)
 ```
 
 
-
-
-#### Matrix Addition and Subtraction
-
-
+### Matrix Addition and Subtraction
 
 ```python
 import numpy as np
@@ -1101,10 +1044,7 @@ The difference of them is:
 ```
 
 
-
-
-#### Nergative Matrix
-
+### Negative Matrix
 
 
 ```python
@@ -1128,11 +1068,7 @@ The negative of C is:
 ```
 
 
-
-
-#### Matrix - Scalar Multiplication
-
-
+### Matrix - Scalar Multiplication
 
 ```python
 import numpy as np
@@ -1163,8 +1099,6 @@ Matrix multiplied by the scalar is:
  [ 8 10 12]
  [14 16 18]]
 ```
-
-
 
 
 As I mentioned earlier, matrix multiplication seems to be tricky at a first glance.
@@ -1248,9 +1182,7 @@ $$
 If this is not enough to catch the idea, take a look this [explanation](https://www.mathsisfun.com/algebra/matrix-multiplying.html)
 
 
-#### Matrix - Matrix Multiplication
-
-
+### Matrix - Matrix Multiplication
 
 ```python
 # In Numpy matrix multiplication can be done with no effort
@@ -1281,11 +1213,7 @@ B * A is:
 ```
 
 
-
-
-#### Matrix Transpose
-
-
+### Transpose
 
 ```python
 import numpy as np
@@ -1312,11 +1240,7 @@ Transpose of A is:
 ```
 
 
-
-
-#### Matrix - Identity Matrix Multiplication
-
-
+### Identity Matrix Multiplication
 
 ```python
 # We have two ways to define identity matrix in Numpy.
@@ -1345,8 +1269,6 @@ print(I_2)
 
 
 
-
-
 ```python
 # Matrix identity multiplication
 
@@ -1371,11 +1293,7 @@ A * I =
 ```
 
 
-
-
-
 ## Conclusion
-<a id="Conclusion"></a>
 
 In this post, I tried to cover the basics of linear algebra. I depicted some theory with examples solved by 
 hand as well as with Numpy. I do hope, this blog will help you to grab the necessary knowledge in linear algebra 
@@ -1385,15 +1303,8 @@ to confuse the reader and give freedom to look for some other materials.
 If some part of the blog is someway unclear to you, please comment below.
 
 
+## References
 
-### References
-<a id="References"></a>
+[Vector](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics))
 
-#### Vector
-
-- [Vector](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics))
-
-#### Matrix
-
-- [Matrix](https://en.wikipedia.org/wiki/Matrix_(mathematics))
-
+[Matrix](https://en.wikipedia.org/wiki/Matrix_(mathematics))
