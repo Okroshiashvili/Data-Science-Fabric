@@ -1,7 +1,7 @@
-Title: Advances of Linear Algebra with Python - Part II
+Title: Advance Linear Algebra with Python - Part II
 Date: 2019-03-05 12:14
 Category: Mathematics
-Tags: Advance Linear Algebra
+Tags: Linear Algebra, Advance Topics
 Keywords: advance linear algebra, matrix decompositions in python, linear algebra advances in python, advance linear algebra for machine learning
 Author: Nodar Okroshiashvili
 Summary: This is the second part of advance linear algebra with Python

@@ -1,7 +1,7 @@
 Title: Integer Sequences in Python
 Date: 2020-04-25 03:44
 Category: Mathematics
-Tags: Number Theory, Python
+Tags: Number Theory, Python, Sequences
 Keywords: integer sequences with python, number theory, plot sequences in python, mathematical plotting in python, fibonacci sequence in python, factorial in python
 Author: Nodar Okroshiashvili
 Summary: Generate and plot integer sequences in python

@@ -1,7 +1,7 @@
-Title: Advances of Linear Algebra with Python - Part I
+Title: Advance Linear Algebra with Python - Part I
 Date: 2019-03-04 12:14
 Category: Mathematics
-Tags: Advance Linear Algebra
+Tags: Linear Algebra, Advance Topics
 Keywords: eigenvectors and eigenvalues in python, gauss and gauss-jordan elimination with python, matrix image and kernel, advances of linear algebra with python, linear algebra advances with python, numpy, scipy
 Author: Nodar Okroshiashvili
 Summary: This is the first part of advance linear algebra with Python

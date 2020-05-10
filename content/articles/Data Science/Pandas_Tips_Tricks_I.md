@@ -1,7 +1,7 @@
 Title: Lost in Pandas: #1
 Date: 2020-04-10 19:14
 Category: Data Science
-Tags: Pandas, Analytics
+Tags: Pandas, Data Analysis
 Keywords: pandas, python, data analysis, pandas tips and tricks, advance pandas, data transformation in pandas, flatten dict in pandas
 Author: Nodar Okroshiashvili
 Summary: Practical Pandas tips and tricks from everyday use

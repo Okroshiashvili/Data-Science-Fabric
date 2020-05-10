@@ -93,7 +93,7 @@ px.scatter(gapminder2007, x="gdpPercap", y="lifeExp", labels={'gdpPercap':'GDP P
 
 
 
-<iframe src='../../images/first_plot.html', width=900, height=700></iframe>
+<iframe src="../../images/first_plot.html", width="100%", height="600px"></iframe>
 
 
 Pelican produces static html files. So, plotly interactive charts do not show up. 
@@ -111,7 +111,7 @@ px.scatter(gapminder2007, x="gdpPercap", y="lifeExp", color='continent',
 
 
 
-<iframe src='../../images/second_plot.html', width=900, height=700></iframe>
+<iframe src='../../images/second_plot.html', width="100%", height="600px"></iframe>
 
 
 And, what if we want to adjust each point size as it to be the country population size? That's should not be a problem.
@@ -126,7 +126,7 @@ px.scatter(gapminder2007, x="gdpPercap", y="lifeExp", color='continent',
 
 
 
-<iframe src='../../images/third_plot.html', width=900, height=700></iframe>
+<iframe src='../../images/third_plot.html', width="100%", height="600px"></iframe>
 
 
 If we hover-over the mouse to each data point the point description will appear. 
@@ -144,7 +144,7 @@ px.scatter(gapminder2007, x="gdpPercap", y="lifeExp", color='continent',
 
 
 
-<iframe src='../../images/fourth_plot.html', width=900, height=700></iframe>
+<iframe src='../../images/fourth_plot.html', width="100%", height="600px"></iframe>
 
 
 I wrote initial command and at each step added two extra arguments. That's the advantage of Plotly Express.
@@ -164,7 +164,7 @@ px.scatter(gapminder, x="gdpPercap", y="lifeExp", color='continent',
 
 
 
-<iframe src='../../images/fifth_plot.html', width=900, height=700></iframe>
+<iframe src='../../images/fifth_plot.html', width="100%", height="600px"></iframe>
 
 
 That's not all. Let plot same data on a map.
@@ -180,7 +180,7 @@ px.choropleth(gapminder, locations='iso_alpha', color='lifeExp',
 
 
 
-<iframe src='../../images/sixth_plot.html', width=900, height=700></iframe>
+<iframe src='../../images/sixth_plot.html', width="100%", height="600px"></iframe>
 
 
 That was good, but wait. What if you don't like jupyter?, [trust me there are such guys](https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit#slide=id.g362da58057_0_1)  

@@ -1,8 +1,8 @@
 Title: Taylor Series Expansion with Python
 Date: 2019-05-09 14:14
 Category: Mathematics
-Tags: Taylor Series Expansion
-Keywords: taylor series expansion with python, maclaurin series expansion with python, python mathematics, numpy, scipy, sympy
+Tags: Taylor Series Expansion, Maclaurin Series Expansion
+Keywords: taylor series expansion with python, maclaurin series expansion with python, python mathematics, numpy, scipy, sympy, taylor series python, how to sum a taylor series in python, taylor approximation python, maclaurin series python
 Author: Nodar Okroshiashvili
 Summary: Taylor and Maclaurin Series Expansion for functions with Python
 
@@ -12,7 +12,7 @@ Maclaurin Series Expansion. According to [wikipedia](https://en.wikipedia.org/wi
 the aim of Taylor Series Expansion (TSE) is to represent a function as an infinite sum of terms that 
 are derived from the values of that function's derivatives, which in turn are evaluated at some 
 predefined single point. In other words, by using TSE, we try to represent some given function 
-as an infinite sum of its derivatives and these derivates are evaluated at some single point 
+as an infinite sum of its derivatives and these derivatives are evaluated at some single point 
 which we can choose. Before diving into mechanics of TSE and its special case 
 Maclaurin Series Expansion (MSE), it's worth to know some history behind these guys. 
 Back in the 17th century the concept of expansion first was introduced by 
@@ -132,7 +132,7 @@ and evaluated at $x = 1$ we have $\mathbb F(1) = e^{1} = 2.71828182 \approx 2.66
 Now let visualize these functions and their Taylor approximations at different points with a 
 different order of expansion. Before visualizing results it's good to have a function which 
 will do symbolic Taylor expansion for higher orders for one variable functions. 
-For multivariable functions, it's up to you.
+For multi-variable functions, it's up to you.
 
 
 

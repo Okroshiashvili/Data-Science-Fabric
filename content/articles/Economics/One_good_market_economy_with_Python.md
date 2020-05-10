@@ -1,7 +1,7 @@
 Title: Modeling single good market in Python
 Date: 2019-06-16 12:01
 Category: Economics
-Tags: Economics, Python
+Tags: Economics, Python, Demand and Supply, Economic Modeling
 Keywords: economics, economic modeling, macroeconomics and python, computational macroeconomics with python, single good market, supply, demand, consumer surplus, producer surplus, python, equilibrium price
 Author: Nodar Okroshiashvili
 Summary: Modeling single good market economy with Python

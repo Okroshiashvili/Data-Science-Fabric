@@ -1,7 +1,7 @@
-Title: Basics of Linear Algebra with Python
+Title: Basic Linear Algebra with Python
 Date: 2019-03-02 13:14
 Category: Mathematics
-Tags: Linear Algebra Basics
+Tags: Linear Algebra, Basics
 Keywords: linear algebra basics in python, vectors and matrices with python, linear algebra, machine learning, python, numpy, scipy
 Author: Nodar Okroshiashvili
 Summary: This is a basics of Linear Algebra with Python

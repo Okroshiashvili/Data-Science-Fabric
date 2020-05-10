@@ -1,7 +1,7 @@
-Title: Intermediates of Linear Algebra with Python - Part I
+Title: Intermediate Linear Algebra with Python - Part I
 Date: 2019-03-02 15:14
 Category: Mathematics
-Tags: Intermediate Linear Algebra
+Tags: Linear Algebra, Intermediate Topics
 Keywords: linear algebra in python, vectors in numpy, vector operations in python and numpy, linear algebra for machine learning, python, numpy, scipy, linear algebra, machine learning
 Author: Nodar Okroshiashvili
 Summary: This is the first part of intermediate Linear Algebra with Python
