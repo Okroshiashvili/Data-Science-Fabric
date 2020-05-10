@@ -1,7 +1,7 @@
 Title: Intermediates of Linear Algebra with Python - Part II
 Date: 2019-03-03 12:14
 Category: Mathematics
-Tags: Intermediate Linear Algebra
+Tags: Linear Algebra, Intermediate Topics
 Keywords: intermediate linear algebra with python, matrices and matrix operations in python, matrix norms in python, python, numpy, scipy, sympy, linear algebra for machine learning, linear algebra, machine
 Author: Nodar Okroshiashvili
 Summary: This is the first part of intermediate Linear Algebra with Python
@@ -18,23 +18,33 @@ This is the second part of third post in blog series about linear algebra.
 This is the continuation of the part one and in this post I will introduce you the following topics:
 
 
-- [Matrix](#Matrix)
-  - [Types of Matrices](#Types-of-Matrices)
-  - [Trace of a Matrix](#Trace-of-a-Matrix)
-  - [Determinant of a Matrix](#Determinant-of-a-Matrix)
-  - [Minor of a Matrix](#Minor-of-a-Matrix)
-  - [Cofactor of a Matrix](#Cofactor-of-a-Matrix)
-  - [Determinant of a Matrix - continuation](#Determinant-of-a-Matrix-continuation)
-  - [Matrix Division](#Matrix-Division)
-  - [Inverse of a Matrix](#Inverse-of-a-Matrix)
-  - [Matrix Division - continuation](#Matrix-Division-continuation)
-  - [Solving Systems of Equations with Matrices](#Solving-System-of-Equations-with-Matrices)
-  - [Elemenraty Row Operations](#Elementary-Row-Operations)
-  - [Rank of a Matrix](#Rank-of-a-Matrix)
-  - [Power of a Matrix](#Power-of-a-Matrix)
-  - [Norm of a Matrix](#Norm-of-a-Matrix)
-  - [Numerical Representation](#Numerical-Representation-Matrix)
-- [Conclusion](#Conclusion)
+- [Matrix](#matrix)
+  - [Types of Matrices](#types-of-matrices)
+  - [Trace of a Matrix](#trace-of-a-matrix)
+  - [Determinant of a Matrix](#determinant-of-a-matrix)
+  - [Minor of a Matrix](#minor-of-a-matrix)
+  - [Cofactor of a Matrix](#cofactor-of-a-matrix)
+  - [Determinant of a Matrix continuation](#determinant-of-a-matrix-continuation)
+  - [Matrix Division](#matrix-division)
+  - [Inverse of a Matrix](#inverse-of-a-matrix)
+  - [Matrix Division continuation](#matrix-division-continuation)
+  - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices)
+  - [Elementary Row Operations](#elementary-row-operations)
+  - [Rank of a Matrix](#rank-of-a-matrix)
+  - [Power of a Matrix](#power-of-a-matrix)
+  - [Norm of a Matrix](#norm-of-a-matrix)
+- [Numerical Representation](#numerical-representation)
+  - [Types of Matrices](#types-of-matrices-1)
+  - [Trace of a Matrix](#trace-of-a-matrix-1)
+  - [Determinant of a Matrix](#determinant-of-a-matrix-1)
+  - [Inverse of a Matrix](#inverse-of-a-matrix-1)
+  - [Matrix Division](#matrix-division-1)
+  - [Solving System of Equations with Matrices](#solving-system-of-equations-with-matrices-1)
+  - [Rank of a Matrix](#rank-of-a-matrix-1)
+  - [Power of a Matrix](#power-of-a-matrix-1)
+  - [Norm of a Matrix](#norm-of-a-matrix-1)
+- [Conclusion](#conclusion)
+- [References](#references)
 
 
 ## Matrix
@@ -569,7 +579,7 @@ $$
 So, the sum of $i$ and $j$ in the power of $(-1)$ switch the sign of every minor.
 
 
-### Determinant of a Matrix - continuation
+### Determinant of a Matrix continuation
 
 We are ready to compute the determinant of our $3 \times 3$ matrix $A$. We need to expand this matrix along one of 
 the row or one of the column to compute the determinant. It's up to you which one you take, row or column. Let take the 
@@ -835,18 +845,14 @@ Let's verify that the original matrix multiplied by the inverse results in an id
 
 $$
 A \cdot A^{-1} =
-\begin{bmatrix}4 & 2 & 2\\6 & 2 & 4\\2 & 2 & 8\end{bmatrix} \cdot \begin{bmatrix}-0.25 & 0.375 & -0.125\\1.25 & -0.875 & 0.125\\-0.25 & 0.125 & 0.125\end{bmatrix}
-$$
-
-$$
-=
+\begin{bmatrix}4 & 2 & 2\\6 & 2 & 4\\2 & 2 & 8\end{bmatrix} \cdot \begin{bmatrix}-0.25 & 0.375 & -0.125\\1.25 & -0.875 & 0.125\\-0.25 & 0.125 & 0.125\end{bmatrix} =
 \begin{bmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix} = I
 $$
 
 Do you see how challenging can be finding the inverse of $4 \times 4$ matrix? That's why we use calculators or computer program to compute it.
 
 
-### Matrix Division - continuation
+### Matrix Division continuation
 
 As we already know how to compute the inverse of a matrix, the division is easy now. If we have two matrices:
 
