@@ -438,7 +438,7 @@ Observing the output, we see that the model did not return well-defined topics. 
 indicates the need for some extra pre-processing steps. As you already know the workflow, doing proper pre-processing is up to you.
 
 
-## Topic Modeling with Sklean
+## Topic Modeling with Sklearn
 
 To do topic modeling in sklearn, I use built in dataset, [The 20 Newsgroups data set](http://qwone.com/~jason/20Newsgroups/). 
 Newsgroups are discussion groups on Usenet, which was popular in the 80s and 90s. This dataset includes 18,000 newsgroups posts with 20 topics. 
@@ -450,7 +450,6 @@ To fetch the data we have to call ```.fetch_20newsgroups()``` method from the *d
 
 
 ```python
-
 # These are our topics
 categories = ['alt.atheism', 'talk.religion.misc', 'comp.graphics', 'sci.space']
 
@@ -458,7 +457,7 @@ categories = ['alt.atheism', 'talk.religion.misc', 'comp.graphics', 'sci.space']
 remove = ('headers', 'footers', 'quotes')
 
 # Our training set
-newsgroups_train = fetch_20newsgroups(data_home="/home/okroshiashvili/Desktop/Blog Posts", subset='train', categories=categories, remove=remove)
+newsgroups_train = fetch_20newsgroups(subset='train', categories=categories, remove=remove)
 ```
 
 ```
@@ -473,7 +472,6 @@ Let print 2 documents from our dataset.
 
 
 ```python
-
 for i in range(3):
     print("\n".join(newsgroups_train.data[:i]))
     print()
@@ -542,19 +540,18 @@ for centuries.
 
 
 
-As we have dataset ready, it' time to call CountVecorizer and build vocabulary and Document-Word-Matrix.
+As we have dataset ready, it' time to call CountVectorizer and build vocabulary and Document-Word-Matrix.
 
 
 ```python
-
 # Define CountVectorizer
 vectorizer = CountVectorizer(stop_words='english')
 
 # Apply it to the dataset
-vectors = vectorizer.fit_transform(newsgroups_train.data).todense()
+document_word_matrix = vectorizer.fit_transform(newsgroups_train.data).todense()
 
 # Print the result
-print(vectors)
+print(document_word_matrix)
 ```
 
 ```
@@ -569,11 +566,10 @@ print(vectors)
 
 
 
-This is the our Document-Word-Matirx. Now let see the vocabulary.
+This is the our Document-Word-Matrix. Now let see the vocabulary.
 
 
 ```python
-
 vocab = np.array(vectorizer.get_feature_names())
 
 pprint(vocab[5000:5020])
@@ -587,23 +583,20 @@ array(['brow', 'brown', 'browning', 'browns', 'browse', 'browsing',
 ```
 
 
-
-
-We are all set and ready to apply Singular Value Decomposion to our Document-Word-Matrix.
+We are all set and ready to apply Singular Value Decomposition to our Document-Word-Matrix.
 
 
 ```python
-
-U, s, Vh = linalg.svd(vectors, full_matrices=False)
+U, s, Vh = linalg.svd(document_word_matrix, full_matrices=False)
 ```
 
 
 
-This produces matrices with the following shapes
+The $U$ is our **Document-Topic** matrix, $s$ is a diagonal matrix and contains singular values indicating the importance of each topic. 
+$Vh$ is **Topic-Word** matrix. The shapes of this matrices are the following: 
 
 
 ```python
-
 print('Shape of U', U.shape)
 print('Shape of s', s.shape)
 print('Shape of Vh', Vh.shape)
@@ -622,7 +615,6 @@ We also have to indicate top words for each topic, in order not to print long se
 
 
 ```python
-
 num_top_words = 10
 
 def show_topics(a):
@@ -660,7 +652,6 @@ argument fallacy conclusion example true ad argumentum premises false valid
 
 space larson image theory universe physical nasa material star unified
 ```
-
 
 
 
