@@ -1,10 +1,11 @@
 Title: Topic Modeling in Python: Latent Semantic Analysis
 Date: 2020-06-22 03:44
+Modified: 2020-06-28 10:53
 Category: Natural Language Processing
 Tags: Topic Modeling, NLP, LSA
 Keywords: topic modeling, nlp, natural language modeling, python, latent semantic analysis, probabilistic latent semantic analysis, topic modeling in nltk, topic modeling in gensim
 Author: Nodar Okroshiashvili
-Summary: Topic modeling with NLTK and Gensim
+Summary: Topic modeling with Sklearn, NLTK, and Gensim
 
 
 Recently, I've started digging deeper into Natural Language Processing. During week or so, I took several 
@@ -16,7 +17,7 @@ For the sake of brevity, these series will include three successive parts, revie
 
 
 This is the first part of this series, and here I want to discuss Latent Semantic Analysis, a.k.a LSA. 
-I implement it using NLTK and Gensim. 
+I implement it using Sklearn, NLTK, and Gensim. 
 Before going into details of this algorithm, let say what topic modeling is and why we should care.
 
 
@@ -170,23 +171,26 @@ Let set all the necessary imports
 import re
 from pprint import pprint
 
-import pandas as pd
 import nltk
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-
+import numpy as np
+import pandas as pd
 from gensim.corpora import Dictionary
 from gensim.models import LsiModel
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import word_tokenize
+from scipy import linalg
+from sklearn import decomposition
+from sklearn.datasets import fetch_20newsgroups
+from sklearn.feature_extraction.text import CountVectorizer
 ```
 
 
 
 
 ```python
-# # If you already have NLTK and WordNetLemmatizer DON'T run this line
 
-# nltk.download('wordnet')
+# nltk.download('wordnet')  # Run only once!
 ```
 
 
@@ -381,50 +385,50 @@ pprint(lsi_topics)
 
 ```
 [(0,
-  [("''", 0.5525950728710217),
-   ('gt', 0.5017034951239502),
-   ('lt', 0.5012421420448145),
-   ('http', 0.13235789377032975),
-   ('reuters', 0.12738544638608676),
-   ('href=', 0.1165203671943378),
-   ('/a', 0.11609987400732807),
-   ('new', 0.10805850440429328),
-   ('said', 0.10550031843615736),
+  [("''", 0.5525962226618513),
+   ('gt', 0.5017031009037042),
+   ('lt', 0.5012420304300391),
+   ('http', 0.13235634462799653),
+   ('reuters', 0.12738884666499628),
+   ('href=', 0.11651870131706114),
+   ('/a', 0.1160981942267705),
+   ('new', 0.10806400267987118),
+   ('said', 0.10549939529328223),
    ('//www.investor.reuters.com/fullquote.aspx',
-0.09462537588321375)]),
+0.09462507762247087)]),
  (1,
-  [('39', 0.7641971094809981),
-   ('said', 0.22375199975904078),
-   ('new', 0.17201656666498566),
-   ('quot', 0.1440324334139677),
-   ("''", -0.12974757461304182),
-   ('lt', -0.1258484664379667),
-   ('gt', -0.12559624751229786),
-   ('year', 0.102034017714784),
-   ('company', 0.0967020195333899),
-   ('u', 0.08643385295026677)]),
+  [('39', 0.764206945943224),
+   ('said', 0.22375243025512392),
+   ('new', 0.171995655882699),
+   ('quot', 0.14403798044536875),
+   ("''", -0.12975103574221364),
+   ('lt', -0.12584874509054236),
+   ('gt', -0.12559591157679006),
+   ('year', 0.10205456650317864),
+   ('company', 0.0967312705999435),
+   ('u', 0.08642264068206248)]),
  (2,
-  [('39', -0.5823634301756129),
-   ('said', 0.37304053806244963),
-   ('new', 0.31226846946427567),
-   ('reuters', 0.28020531171237956),
-   ('york', 0.15097794586351654),
-   ('u.s.', 0.12230606105242761),
-   ("''", -0.12071594616719289),
-   ('gt', -0.11465765558602346),
-   ('lt', -0.11451351758143592),
-   ('ap', 0.10568473511696055)]),
+  [('39', -0.582336868887638),
+   ('said', 0.3730515282814641),
+   ('new', 0.3123439002995489),
+   ('reuters', 0.2802704621161875),
+   ('york', 0.1510133875425381),
+   ('u.s.', 0.12230364570272785),
+   ("''", -0.12076119649379513),
+   ('gt', -0.11464364569423975),
+   ('lt', -0.11449654030672701),
+   ('ap', 0.1056866037685956)]),
  (3,
-  [('new', 0.6280420959343559),
-   ('said', -0.46484918292452715),
-   ('quot', -0.3648027843052166),
-   ('york', 0.2937236162058658),
-   ("''", -0.09895153658039355),
-   ('price', 0.09543427194214693),
-   ('39', 0.087455449368572),
-   ('oil', 0.08682102624838821),
-   ('official', -0.08501911286445321),
-   ('stock', 0.07554676848568334)])]
+  [('new', 0.6278034258309728),
+   ('said', -0.4648741830748478),
+   ('quot', -0.3649085096777877),
+   ('york', 0.293734557131022),
+   ("''", -0.09906711403700916),
+   ('price', 0.09568331634942481),
+   ('39', 0.08755246507212097),
+   ('oil', 0.08653530201307595),
+   ('official', -0.08581956382894348),
+   ('stock', 0.07549900454554219)])]
 ```
 
 
@@ -432,6 +436,231 @@ pprint(lsi_topics)
 ```.show_topics()``` method shows the most contributing words (both positively and negatively) for each of the first *n* the number of topics. 
 Observing the output, we see that the model did not return well-defined topics. There are some junk words. This is due to the pre-processing and 
 indicates the need for some extra pre-processing steps. As you already know the workflow, doing proper pre-processing is up to you.
+
+
+## Topic Modeling with Sklean
+
+To do topic modeling in sklearn, I use built in dataset, [The 20 Newsgroups data set](http://qwone.com/~jason/20Newsgroups/). 
+Newsgroups are discussion groups on Usenet, which was popular in the 80s and 90s. This dataset includes 18,000 newsgroups posts with 20 topics. 
+For the sake of brevity, we can pick only 4 topics. With sklearn, we can directly apply the theory, I draw in the above section and 
+see how the SVD is applied to the Word-Document-Matrix. For the same reason as above, I will use only training set.
+
+
+To fetch the data we have to call ```.fetch_20newsgroups()``` method from the *datasets* class.
+
+
+```python
+
+# These are our topics
+categories = ['alt.atheism', 'talk.religion.misc', 'comp.graphics', 'sci.space']
+
+# Remove header, footer, and quotes metadata
+remove = ('headers', 'footers', 'quotes')
+
+# Our training set
+newsgroups_train = fetch_20newsgroups(data_home="/home/okroshiashvili/Desktop/Blog Posts", subset='train', categories=categories, remove=remove)
+```
+
+```
+Downloading 20news dataset. This may take a few minutes.
+Downloading dataset from
+https://ndownloader.figshare.com/files/5975967 (14 MB)
+```
+
+
+
+Let print 2 documents from our dataset.
+
+
+```python
+
+for i in range(3):
+    print("\n".join(newsgroups_train.data[:i]))
+    print()
+    print("#" * 50)
+```
+
+```
+
+
+##################################################
+Hi,
+
+I've noticed that if you only save a model (with all your mapping
+planes
+positioned carefully) to a .3DS file that when you reload it after
+restarting
+3DS, they are given a default position and orientation.  But if you
+save
+to a .PRJ file their positions/orientation are preserved.  Does anyone
+know why this information is not stored in the .3DS file?  Nothing is
+explicitly said in the manual about saving texture rules in the .PRJ
+file.
+I'd like to be able to read the texture rule information, does anyone
+have
+the format for the .PRJ file?
+
+Is the .CEL file format available from somewhere?
+
+Rych
+
+##################################################
+Hi,
+
+I've noticed that if you only save a model (with all your mapping
+planes
+positioned carefully) to a .3DS file that when you reload it after
+restarting
+3DS, they are given a default position and orientation.  But if you
+save
+to a .PRJ file their positions/orientation are preserved.  Does anyone
+know why this information is not stored in the .3DS file?  Nothing is
+explicitly said in the manual about saving texture rules in the .PRJ
+file.
+I'd like to be able to read the texture rule information, does anyone
+have
+the format for the .PRJ file?
+
+Is the .CEL file format available from somewhere?
+
+Rych
+
+
+Seems to be, barring evidence to the contrary, that Koresh was simply
+another deranged fanatic who thought it neccessary to take a whole
+bunch of
+folks with him, children and all, to satisfy his delusional mania. Jim
+Jones, circa 1993.
+
+
+Nope - fruitcakes like Koresh have been demonstrating such evil
+corruption
+for centuries.
+
+##################################################
+```
+
+
+
+As we have dataset ready, it' time to call CountVecorizer and build vocabulary and Document-Word-Matrix.
+
+
+```python
+
+# Define CountVectorizer
+vectorizer = CountVectorizer(stop_words='english')
+
+# Apply it to the dataset
+vectors = vectorizer.fit_transform(newsgroups_train.data).todense()
+
+# Print the result
+print(vectors)
+```
+
+```
+[[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+```
+
+
+
+This is the our Document-Word-Matirx. Now let see the vocabulary.
+
+
+```python
+
+vocab = np.array(vectorizer.get_feature_names())
+
+pprint(vocab[5000:5020])
+```
+
+```
+array(['brow', 'brown', 'browning', 'browns', 'browse', 'browsing',
+       'bruce', 'bruces', 'bruise', 'bruised', 'bruises', 'brunner',
+       'brush', 'brushmapping', 'brushmaps', 'brussel', 'brutal',
+       'brutally', 'brute', 'bryan'], dtype='<U80')
+```
+
+
+
+
+We are all set and ready to apply Singular Value Decomposion to our Document-Word-Matrix.
+
+
+```python
+
+U, s, Vh = linalg.svd(vectors, full_matrices=False)
+```
+
+
+
+This produces matrices with the following shapes
+
+
+```python
+
+print('Shape of U', U.shape)
+print('Shape of s', s.shape)
+print('Shape of Vh', Vh.shape)
+```
+
+```
+Shape of U (2034, 2034)
+Shape of s (2034,)
+Shape of Vh (2034, 26576)
+```
+
+
+
+To see the topics we need one small function. The input for this function will be $Vh$ matrix and will print the topics. 
+We also have to indicate top words for each topic, in order not to print long sentences and less important words. Let set it as 10.
+
+
+```python
+
+num_top_words = 10
+
+def show_topics(a):
+    top_words = lambda t: [vocab[i] for i in np.argsort(t)[:-num_top_words-1:-1]]
+    topic_words = ([top_words(t) for t in a])
+    return [' '.join(t) for t in topic_words]
+```
+
+
+
+
+```python
+
+print('\n'.join(show_topics(Vh[:10])))
+```
+
+```
+ditto critus propagandist surname galacticentric kindergarten surreal imaginative salvadorans ahhh
+
+jpeg gif file color quality image jfif format bit version
+
+graphics edu pub mail 128 3d ray ftp send image
+
+jesus god matthew people atheists atheism does graphics religious said
+
+image data processing analysis software available tools display tool user
+
+god atheists atheism religious believe religion argument true atheist example
+
+space nasa lunar mars probe moon missions probes surface earth
+
+image probe surface lunar mars probes moon orbit mariner mission
+
+argument fallacy conclusion example true ad argumentum premises false valid
+
+space larson image theory universe physical nasa material star unified
+```
+
 
 
 
@@ -449,3 +678,5 @@ following blogs, I will review **Latent Dirichlet Allocation** and **Non-Negativ
 - [Document_Term_Matrix](https://en.wikipedia.org/wiki/Document-term_matrix)
 
 - [Latent_Semantic_Analysis](https://en.wikipedia.org/wiki/Latent_semantic_analysis)
+
+- [A Code-First Introduction to Natural Language Processing](https://www.fast.ai/2019/07/08/fastai-nlp/)
