@@ -296,12 +296,6 @@ print(kl_divergence(p, q))
 
 ```
 80.59673051535388
-/home/okroshiashvili/miniconda3/envs/blog/bin/pweave:2:
-RuntimeWarning: invalid value encountered in log2
-  # -*- coding: utf-8 -*-
-/home/okroshiashvili/miniconda3/envs/blog/bin/pweave:3:
-RuntimeWarning: invalid value encountered in log2
-  import re
 ```
 
 
