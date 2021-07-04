@@ -7,5 +7,5 @@ pelican==4.2.0
 scikit-learn==0.22
 seaborn==0.9.0
 sympy==1.5
-Pweave-0.30.3
-plotly-4.5.4
+Pweave==0.30.3
+plotly==4.5.4
